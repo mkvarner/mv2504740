@@ -22,8 +22,8 @@ int main()
     cout << " pea pods\n" ;
     cout << "and " ;
     cout << peas_per_pod;
-    cout << "peas in each pod, then\n" ;
-    cout << "you have" ;
+    cout << " peas in each pod, then\n" ;
+    cout << "you have " ;
     cout << total_peas;
     cout << " peas in all the pods.\n" ;
     cout << "Good-bye\n" ; //Added last line as explained in text
