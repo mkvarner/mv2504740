@@ -2,7 +2,8 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on June 25, 2014, 7:34 PM
- * Purpose: Assignment 1
+ * Write program that prints exactly what
+ * was in book
  */
 
 #include <iostream>
