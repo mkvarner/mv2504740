@@ -2,7 +2,9 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on June 25, 2014, 7:34 PM
- * Purpose: Assignment 1
+ * Now change the / sign in problem3 to
+ * a * sign and run, notice the runs fine,
+ * but output is incorrect
  */
 
 #include <iostream>

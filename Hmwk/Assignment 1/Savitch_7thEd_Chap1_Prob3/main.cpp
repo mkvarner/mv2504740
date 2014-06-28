@@ -2,7 +2,8 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on June 25, 2014, 7:34 PM
- * Purpose: Assignment 1
+ * Further modify problem 1 in this chapter enter /
+ * try putting 0 in denominator notice error message
  */
 
 #include <iostream>
@@ -16,7 +17,9 @@ int main()
     cin >> peas_per_pod;
     cout << "Enter the number of peas in a pod:\n" ;
     cin >> peas_per_pod;
-    total_peas = number_of_pods / peas_per_pod;//Run failed when=0, exit value 1
+    total_peas = number_of_pods / peas_per_pod;//when=0, you get0 [main] savitch
+        //7thed_chap1_prob3 7904 cygwin_exception::open_stackdumpfile: Dumping 
+        //stack trace to savitch_7thed_chap1_prob3.exe.stackdump
     cout << "If you have ";
     cout << number_of_pods;
     cout << " pea pods\n" ;

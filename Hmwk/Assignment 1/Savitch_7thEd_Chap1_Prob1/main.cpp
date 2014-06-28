@@ -2,16 +2,14 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on June 25, 2014, 7:34 PM
- * Modify program for problem 1 in this chapter
- * so Hello appears at the beginning
- * and Good-bye appears at the end of the output
+ * Type display 1.8, compile, 
+ * and run the program
  */
 
 #include <iostream>
 using namespace std;
 int main() 
 {
-    cout <<"Hello" <<endl; //Added line to make Hello appear on screen
     int number_of_pods, peas_per_pod, total_peas;
     cout << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
@@ -28,7 +26,5 @@ int main()
     cout << "you have " ;
     cout << total_peas;
     cout << " peas in all the pods.\n" ;
-    cout << "Good-bye\n" ; //Added last line as explained in text
     return 0;
 }
-
