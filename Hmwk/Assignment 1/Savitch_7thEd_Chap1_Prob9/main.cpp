@@ -9,7 +9,7 @@
 using namespace std;
 int main() 
 {
-    int time_sec, distance_feet;
+    char time_sec, distance_feet;
     cout << "Press return after entering a number.\n";
     cout << "Enter the time in seconds:\n";
     cin >> time_sec;
