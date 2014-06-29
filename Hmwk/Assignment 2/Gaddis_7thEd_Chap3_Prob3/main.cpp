@@ -26,18 +26,30 @@ int main(int argc, char** argv)
     cout <<"\n";
     
     all = A+B+C+D+E; //sum of all scores
-    cout.precision(2);
     average_all = all / 500; //sum points got divided by total points possible
-    cout.precision(2);
-    tot_average = average_all * 100;
+    tot_average = average_all * 100; //gives percent
     
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
     cout.precision(1);
+    
     cout <<"If you received a "<<A<<" on test 1, a "<<B<<" on test 2,\n";
     cout <<"a "<<C<<" on test 3, a "<<D<<" on test 4, and a \n";
     cout <<E<<" on test 5. Then, your average test score is\n";
-    cout<<average_all<<"."<<" Which amounts to a %"<<tot_average<<".\n";
+    cout <<average_all<<"\n";
+    cout <<"Which amounts to a %"<<tot_average<<".\n";
+    cout <<"\n";
+    
+    if (tot_average < 70)
+        cout <<"You're in danger of failing! Better study a bit more...";
+    
+    else if (tot_average == 70)
+        cout <<"You're playing a dangerous game! On border of failing.";
+    
+    else
+        cout <<"You're in the green! Good work, keep it up!";
+                    
+    
     
     
     return 0;
