@@ -41,14 +41,15 @@ int main(int argc, char** argv)
     cout <<"\n";
     
     if (tot_average < 70)
-        cout <<"You're in danger of failing! Better study a bit more...";
+        cout <<"You're failing! Better study a bit more...";
     
     else if (tot_average == 70)
         cout <<"You're playing a dangerous game! On border of failing.";
     
     else
         cout <<"You're in the green! Good work, keep it up!";
-                    
+       
+    cout <<"\n";
     
     
     
