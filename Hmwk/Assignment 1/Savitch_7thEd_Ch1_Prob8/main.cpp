@@ -25,7 +25,10 @@ int main()
     tot_nickel = nickel * 0.05;
     tot_amount = tot_quarter + tot_dime + tot_nickel;
     cout << "you have " ;
-    cout<<setprecision(3),fixed;
+    
+    cout.setf(ios::fixed);
+    cout.precision(2);
+    
     cout << "$ "<<tot_amount<<endl;
     return 0;
 }
