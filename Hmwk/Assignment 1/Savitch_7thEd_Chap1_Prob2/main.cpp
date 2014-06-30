@@ -11,8 +11,8 @@
 using namespace std;
 int main() 
 {
-    cout <<"Hello" <<endl; //Added line to make Hello appear on screen
     int number_of_pods, peas_per_pod, total_peas;
+    cout <<"Hello" <<endl; //Added line to make Hello appear on screen
     cout << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
     cin >> peas_per_pod;
