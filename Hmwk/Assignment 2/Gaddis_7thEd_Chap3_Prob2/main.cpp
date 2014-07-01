@@ -13,7 +13,7 @@ using namespace std;
 
 int main(int argc, char** argv) 
 {
-    double class_A, class_B, class_C, income_in, classa_mon, classb_mon,
+    float class_A, class_B, class_C, income_in, classa_mon, classb_mon,
             classc_mon;
     
     cout <<"Press enter after every number you type.\n";

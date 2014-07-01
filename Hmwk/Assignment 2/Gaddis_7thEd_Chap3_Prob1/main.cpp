@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char** argv) 
 {
     
-    double tot_gal, tot_miles, per_gallon;
+    float tot_gal, tot_miles, per_gallon;
     cout << "Press enter after every number you type.\n";
     cout << "How many gallons of gas can your car tank hold?\n";
     cin >> tot_gal; //total amount of gallons car can hold

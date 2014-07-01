@@ -18,18 +18,24 @@ int main(int argc, char** argv)
     
     cout <<"Enter name of first month:\n";
     cin >> month_o;
+    cin.ignore();
     cout <<"Enter the amount of rain that fell in inches:\n";
     cin >> mo_rain_o;
+    cin.ignore();
     
     cout <<"Enter name of second month:\n";
     cin >> month_tw;
+    cin.ignore();
     cout <<"Enter the amount of rain that fell in inches:\n";
     cin >> mo_rain_tw;
+    cin.ignore();
     
     cout <<"Enter name of third month:\n";
     cin >> month_th;
+    cin.ignore();
     cout <<"Enter amount of rain that fell in inches:\n";
     cin >> mo_rain_th;
+    cin.ignore();
     
     //calculate average
     sum = mo_rain_o + mo_rain_tw + mo_rain_th;
