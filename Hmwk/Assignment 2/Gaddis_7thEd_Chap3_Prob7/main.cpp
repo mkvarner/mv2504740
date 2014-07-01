@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char** argv) 
 {
     
-    double cookies, calories, serving;
+    float cookies, calories, serving;
     cout << "Press enter after every number you type.\n";
     cout << "How many cookies did you actually eat?\n";
     cin >> cookies;
@@ -22,7 +22,7 @@ int main(int argc, char** argv)
    
     
     //bag says 1 serving is 300 calories so calories consumed is...
-    serving = cookies / 4;
+    serving = cookies / 4.0;
     calories = serving * 300;
     
     cout <<"\n";
