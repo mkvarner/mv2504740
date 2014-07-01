@@ -34,6 +34,7 @@ int main(int argc, char** argv) {
     net = gross * .2;
     distributor = gross - net;
     
+    cout <<"\n";
     cout <<"Movie name:                               "<<movie<<"\n";
     cout <<"Adult tickets sold:                       "<<adult<<"\n";
     cout <<"Child tickets sold:                       "<<child<<"\n";

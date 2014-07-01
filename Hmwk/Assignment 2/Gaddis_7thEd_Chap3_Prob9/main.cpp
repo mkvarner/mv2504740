@@ -35,6 +35,8 @@ int main(int argc, char** argv)
     
     cout.setf(ios::fixed);
     cout.precision(2);
+    
+    cout <<"\n";
     cout <<"Your monthly expenses are $" <<total<<" per month.\n";
     cout <<"Which is $"<<yearly<<" per year.\n";
             
