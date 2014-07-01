@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char** argv) 
 {
     
-    double loan, insurance, gas, oil, tires, maintenance, total, yearly;
+    float loan, insurance, gas, oil, tires, maintenance, total, yearly;
     cout << "Press enter after every number you type.\n";
     cout << "Enter the monthly cost for:\n";
     cout << "Loan payment:\n";

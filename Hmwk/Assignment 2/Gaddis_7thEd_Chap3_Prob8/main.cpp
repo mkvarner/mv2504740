@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char** argv) 
 {
     
-    double insurance, value, per_gallon;
+    float insurance, value, per_gallon;
     cout << "Press enter after every number you type.\n";
     cout << "How much is replacement cost of building in dollars?\n";
     cin >> value;

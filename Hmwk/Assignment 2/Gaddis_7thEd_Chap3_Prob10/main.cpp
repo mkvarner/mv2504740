@@ -18,7 +18,7 @@ int main(int argc, char** argv)
     cin >> temp_C;
     
     temp_F = (9.0/5.0)* temp_C + 32.0;
-    // gives miles per gallon
+    // gives temperature in Fahrenheit
     
     cout <<"\n";
     
