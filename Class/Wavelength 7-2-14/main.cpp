@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 {
     float freq;
     cout <<"Press enter after every entry.\n";
-    cout <<"Enter the frequency:\n";
+    cout <<"Enter the wavelength:\n";
     cin >> freq;
     
     if (freq >= (pow(10, 3)))
