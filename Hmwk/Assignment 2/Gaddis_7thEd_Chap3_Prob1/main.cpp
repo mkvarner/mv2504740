@@ -20,7 +20,7 @@ int main(int argc, char** argv)
     cout << "How many miles can your car be driven on a full tank of gas?\n";
     cin >> tot_miles;//total amount of miles on full tank
     
-    per_gallon = tot_gal / tot_miles;
+    per_gallon = tot_miles / tot_gal;
     // gives miles per gallon
     
     cout <<"If you have " <<tot_gal<<" gallons of gas and you can\n";
