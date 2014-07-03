@@ -29,13 +29,9 @@ int main(int argc, char** argv)
 
     //Payment Calc
     num = rate_mon * pow((1+rate_mon), months); //numerator
-    
-    den = (pow((1+ rate_mon), months))-1; //denominator
-            
+    den = (pow((1+ rate_mon), months))-1; //denominator     
     payment1 = num / den;
-    
     payment2 = payment1 * loan; //Total payment
-    
     cost = (payment2 * months) - loan; //Interest on your loan
     
     cout <<"\n";
