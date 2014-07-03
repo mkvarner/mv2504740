@@ -14,11 +14,11 @@ int main(int argc, char** argv)
     char month_o[10], month_tw[10], month_th[10];
     float sum, tot_avg, mo_rain_o, mo_rain_tw, mo_rain_th;
     
-    cout <<"Press enter after every entry.\n";
+    cout <<"Press enter after every entry. Use form of ###.#\n";
     
     cout <<"Enter name of first month:\n";
     cin.getline(month_o, 10);
-    cout <<"Enter the amount of rain that fell in inches:\n";
+    cout <<"Enter the amount of rain that fell in inches in form:\n";
     cin >> mo_rain_o;
     
     cout <<"Enter name of second month:\n";
