@@ -11,7 +11,7 @@ using namespace std;
 
 int main(int argc, char** argv) 
 {
-    double A, B, C, D, E, average_all, all, tot_average;
+    float A, B, C, D, E, average_all, all, tot_average;
     cout <<"Press enter after every entry.\n";
     cout <<"Enter first test score out of 100:\n";
     cin >> A;

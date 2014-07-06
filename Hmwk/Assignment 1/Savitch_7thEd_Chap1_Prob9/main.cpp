@@ -11,14 +11,18 @@
 using namespace std;
 int main() 
 {
-    int time_sec, distance_feet;
+    float time_sec, distance_feet;
     cout << "Press return after entering a number.\n";
     cout << "Enter the time in seconds:\n";
     cin >> time_sec;
     
-    distance_feet = 32 * time_sec * time_sec /2;
+    distance_feet = 32.0 * time_sec * time_sec /2.0;
     //32 is feet per second i.e acceleration in English units
     
+     cout.setf(ios::fixed);
+    cout.precision(1);
+    
+    cout <<"\n";
     cout << "If object is dropped and in freefall for "<<time_sec<< " seconds,\n";
     cout <<"then, it would fall " <<distance_feet<<" feet\n";
     return 0;

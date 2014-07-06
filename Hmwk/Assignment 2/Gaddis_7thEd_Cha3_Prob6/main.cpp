@@ -26,6 +26,7 @@ int main(int argc, char** argv)
     cout.setf(ios::fixed);
     cout.precision(0);
     
+    cout <<"\n";
     cout <<"If your total weight of pallet and widgets is "<<plus<<" pounds\n";
     cout <<"then, you have "<<tot_widget<<" widgets.\n";
             

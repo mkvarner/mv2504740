@@ -11,10 +11,12 @@ using namespace std;
 
 int main(int argc, char** argv) {
     
-    char movie, adult, child, gross, net, distributor, pay_adult, pay_child;
+    char movie[30];
+    int adult, child;
+    float gross, net, distributor, pay_adult, pay_child;
     
     cout <<"Movie name:\n";
-    cin >> movie;
+    cin.getline(movie,30);
     
     cout <<"Number of adult tickets sold:\n";
     cin >> adult;
@@ -34,12 +36,17 @@ int main(int argc, char** argv) {
     net = gross * .2;
     distributor = gross - net;
     
+    cout <<"\n";
     cout <<"Movie name:                               "<<movie<<"\n";
+    
+    //Both integers
     cout <<"Adult tickets sold:                       "<<adult<<"\n";
     cout <<"Child tickets sold:                       "<<child<<"\n";
-    cout <<"Gross box office profit:                  "<<gross<<"\n";
-    cout <<"Net box office profit:                     "<<net<<"\n";
-    cout <<"Amount paid to distributor:                "<<distributor<<"\n";
+    
+  //Both floats i.e decimal
+    cout <<"Gross box office profit:                  $"<<gross<<"\n";
+    cout <<"Net box office profit:                    $"<<net<<"\n";
+    cout <<"Amount paid to distributor:               $"<<distributor<<"\n";
     
 
     return 0;

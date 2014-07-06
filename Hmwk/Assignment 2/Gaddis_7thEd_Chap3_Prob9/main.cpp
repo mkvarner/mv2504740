@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char** argv) 
 {
     
-    double loan, insurance, gas, oil, tires, maintenance, total, yearly;
+    float loan, insurance, gas, oil, tires, maintenance, total, yearly;
     cout << "Press enter after every number you type.\n";
     cout << "Enter the monthly cost for:\n";
     cout << "Loan payment:\n";
@@ -35,6 +35,8 @@ int main(int argc, char** argv)
     
     cout.setf(ios::fixed);
     cout.precision(2);
+    
+    cout <<"\n";
     cout <<"Your monthly expenses are $" <<total<<" per month.\n";
     cout <<"Which is $"<<yearly<<" per year.\n";
             
