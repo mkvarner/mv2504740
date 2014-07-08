@@ -1,12 +1,12 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr 
+ * Author: Megan Varner
  * Created on July 2nd, 2014, 9:24 PM
+ * Is the month magic
  */
 
 //System Libraries
 #include <iostream>
-#include <string.h>
 using namespace std;
 
 //User Libraries
