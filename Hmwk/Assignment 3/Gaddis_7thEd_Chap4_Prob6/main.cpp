@@ -19,7 +19,7 @@ int main(int argc, char** argv)
     cin >> num1;
     
     
-    weight = num1*9.8;
+    weight = num1*9.8; //weight = mass * gravity i.e 9.8 m/s^2
     
     cout<<"\n";
     

@@ -21,7 +21,7 @@ int main(int argc, char** argv)
     cout << "Height in inches:\n";
     cin >> num2;
     
-    BMI = (num1 * 703) / (num2 * num2);
+    BMI = (num1 * 703) / (num2 * num2); //BMI is weight * 703/ Height squared
     
    cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
