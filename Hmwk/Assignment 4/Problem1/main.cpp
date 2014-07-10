@@ -1,17 +1,14 @@
 /* 
  * File:   main.cpp
- * Author: rcc
- *
+ * Author: Megan Varner
  * Created on July 9, 2014, 7:51 PM
+ * Sum numbers up to number user enters
  */
 
 #include <iostream>
 
 using namespace std;
 
-/*
- * 
- */
 int main(int argc, char** argv) {
      
 int sum=0, number;
