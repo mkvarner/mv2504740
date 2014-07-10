@@ -26,6 +26,10 @@ int main(int argc, char** argv)
     cout <<"How many Class C seats were sold?\n";
     cin >> class_C;
     
+    cout.setf(ios::fixed);
+    cout.precision(2);
+    //sets decimal precision
+    
     classa_mon = class_A * 15; //Rate A
     //Income for class A tickets
     
@@ -42,10 +46,6 @@ int main(int argc, char** argv)
     cout << "If "<<class_A<<" seats were sold for Class A,\n";
     cout <<class_B<<" seats were sold for Class B,\n";
     cout <<"and "<<class_C<< " seats were sold for Class C\n";
-    
-    cout.setf(ios::fixed);
-    cout.precision(2);
-    //sets decimal precision
     
     cout <<"then, the income generated is $"<<income_in;
     cout <<" through ticket sales.\n";
