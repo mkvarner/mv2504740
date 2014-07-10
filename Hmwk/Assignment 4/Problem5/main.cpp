@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on July 9, 2014, 7:51 PM
- * Calculates ocean depth
+ * Distance traveled 
  */
 
 #include <iostream>
@@ -12,13 +12,15 @@ using namespace std;
 
 int main(int argc, char** argv) {
     
-float number, prod=1.5;
+float speed, dist, time;
 
 do{
     
-    cout<<"Enter number of years and will display with depth in mm:\n";
-    cin>>number;
-}while(number>=25);
+    cout<<"Enter speed in miles per hour:\n";
+    cin>>speed;
+    cout<<"Enter how many hours traveled:\n";
+    cin>>time
+}while(number>=1);
 
 while  (number>=25){
     
@@ -31,5 +33,4 @@ while  (number>=25){
 
     return 0;
 }
-
 

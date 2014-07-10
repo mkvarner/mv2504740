@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on July 9, 2014, 7:51 PM
- * Calculates ocean depth
+ * Calculates calories burned on treadmill
  */
 
 #include <iostream>
@@ -16,20 +16,19 @@ float number, prod=1.5;
 
 do{
     
-    cout<<"Enter number of years and will display with depth in mm:\n";
+    cout<<"Enter number of minutes run either 10, 15, 20, 25, or 30:\n";
     cin>>number;
-}while(number>=25);
+}while(number>=30);
 
-while  (number>=25){
+while  (number>=30){
     
-    prod=1.5*number;
+    prod=3.9*number;
         
-    cout <<"Years        Depth  \n";
+    cout <<"Minutes        Calories Burned  \n";
     cout<<"-------------------\n";
     cout<<prod<<endl;
 }   
 
     return 0;
 }
-
 
