@@ -27,10 +27,11 @@ int main(int argc, char** argv)
     cout << "Enter width of rectangle 2 in ft:\n";
     cin >> num4;
     
-    area1 = num1*num3;
-    area2 = num2*num4;
+    area1 = num1*num3; //area of 1st rectangle
+    area2 = num2*num4; //area of 2nd rectangle
     
     cout<<"\n";
+    //Sees which area is greater
     greater = area1 >area2 ? area1 : area2;
     lesser = area1 <area2 ? area1 : area2;
     

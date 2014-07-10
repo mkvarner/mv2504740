@@ -18,6 +18,7 @@ int main(int argc, char** argv)
     cout << "Enter number of seconds:\n";
     cin >> num1;
     
+    //Converts from input to minutes, hours, or days
     minute = num1/60;
     hour = num1/3600;
     day = num1/86400;

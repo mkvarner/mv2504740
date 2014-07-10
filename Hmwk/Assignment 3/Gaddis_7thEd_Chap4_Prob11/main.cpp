@@ -17,24 +17,24 @@ int main(int argc, char** argv)
     cout << "Enter number of books purchased this month:\n";
     cin >> num1;
    
-    
+    //Calculates your points based on books bought
     if (num1 == 0)
-        cout <<"0 points.";
+        cout <<"0 points."; //0 books bought
     
     else if (num1 == 1)
-        cout <<"5 points.";
+        cout <<"5 points.";     //1 book bought
     
     else if (num1 == 2)
-        cout <<"15 points.";
+        cout <<"15 points.";    //2 books bought
     
     else if (num1 == 3)
-        cout <<"30 points.";
+        cout <<"30 points.";    //3 books bought
     
     else if(num1 >= 4)
-        cout <<"60 points.";
+        cout <<"60 points.";    //4 or more books bought
     
     else
-        cout <<"Invalid entry.";
+        cout <<"Invalid entry.";        
     
             
 

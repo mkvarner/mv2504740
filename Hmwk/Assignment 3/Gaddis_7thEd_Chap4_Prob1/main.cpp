@@ -21,7 +21,7 @@ int main(int argc, char** argv)
     cout << "Enter second number:\n";
     cin >> num2;
     
-    
+    //Finds if 1st or 2nd number is greater
     greater = num1 >num2 ? num1 : num2;
     lesser = num1 <num2 ? num1 : num2;
     

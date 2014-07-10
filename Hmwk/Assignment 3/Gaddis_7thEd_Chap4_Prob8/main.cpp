@@ -24,13 +24,13 @@ int main(int argc, char** argv)
     cin >> p;
     
     
-    tot_quart = quart * 0.25;
-    tot_dim = dim * 0.10;
-    tot_nickel = nickel * 0.05;
-    pt = p * 0.01;
-    tot_amount = tot_quart + tot_dim + tot_nickel + pt;
+    tot_quart = quart * 0.25; //quarter worth
+    tot_dim = dim * 0.10;     //dimes worth
+    tot_nickel = nickel * 0.05; //nickel worth
+    pt = p * 0.01;              //pennies worth
+    tot_amount = tot_quart + tot_dim + tot_nickel + pt; //Your total
   
-    
+    //Determines if you win or not
     if (tot_amount < 1)
         cout <<"Less than one dollar.";
     

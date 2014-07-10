@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     cout<<"Type in a two-digit year;\n";
     cin>>year;
     
-    magic = month * day;
+    magic = month * day; //Calculates if date is magic month*day=year
 
     if (magic == year)     
          cout<<"The date is magic.";

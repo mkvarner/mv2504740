@@ -10,7 +10,7 @@
 using namespace std;
 int main(int argc, char** argv)
 {
- int numberIn;
+ int numberIn; //Variable 
 
 cout << "Press enter after every entry.\n";
 cout << "Enter number 1-10 and Roman numeral conversion will appear:\n";
