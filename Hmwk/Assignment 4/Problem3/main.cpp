@@ -2,34 +2,24 @@
  * File:   main.cpp
  * Author: Megan Varner
  * Created on July 9, 2014, 7:51 PM
- * Calculates ocean depth
+ * Calculates ocean depth for next 25 years
  */
 
-#include <iostream>
-#include<iomanip>
+#include <iostream> 
 
-using namespace std;
+using namespace std; 
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv) { 
     
-float number, prod=1.5;
 
-do{
-    
-    cout<<"Enter number of years and will display with depth in mm:\n";
-    cin>>number;
-}while(number>=25);
+float year=1,rate=1.5; 
 
-while  (number>=25){
-    
-    prod=1.5*number;
-        
-    cout <<"Years        Depth  \n";
-    cout<<"-------------------\n";
-    cout<<prod<<endl;
-}   
-
-    return 0;
-}
+while(year<=25){ 
+cout<<"In year "<<year<<" the ocean will rise " <<rate<<" mm"<<endl; 
+rate=rate+1.5; 
+year=year + 1; 
+} 
+return 0; 
+} 
 
 
