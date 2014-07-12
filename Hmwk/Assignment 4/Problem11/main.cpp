@@ -20,8 +20,8 @@ int main()
         cin >> organisms;
         while(organisms < 2)
         {
-                cout << "Enter the starting number of organisms: ";
-                cin >> organisms;
+         cout << "Enter the starting number of organisms: ";
+         cin >> organisms;
         }
        
         cout << "Enter the average daily population increase (as a percentage): ";
@@ -37,8 +37,8 @@ int main()
         cin >> days_multiply;
         while(days_multiply < 1)
         {
-                cout << "Enter the number of days they will multiply: ";
-                cin >> days_multiply;
+         cout << "Enter the number of days they will multiply: ";
+         cin >> days_multiply;
         }
        
         for (int count = 0; count != days_multiply; count++)
