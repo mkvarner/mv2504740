@@ -6,31 +6,40 @@
  */
 
 #include <iostream>
-#include<iomanip>
-
 using namespace std;
 
-int main(int argc, char** argv) {
-    
-float speed, dist, time;
+int main()
+{
+	float distance, speed, time;
+		   
+	cout << "Speed of the vehicle in miles per hour:  ";
+	cin >> speed;
+	
+	while(speed <= 0)
+	{
+	cout << "Speed of the vehicle in miles per hour:  ";
+        cin >> speed;
+	}
+	
+	cout << "Hours has it traveled:   ";
+	cin >> time;
 
-do{
-    
-    cout<<"Enter speed in miles per hour:\n";
-    cin>>speed;
-    cout<<"Enter how many hours traveled:\n";
-    cin>>time
-}while(number>=1);
+	while(time < 1)
+	{
+	cout << "Hours has it traveled:   ";
+	cin >> time;
+	}
 
-while  (number>=25){
-    
-    prod=1.5*number;
-        
-    cout <<"Years        Depth  \n";
-    cout<<"-------------------\n";
-    cout<<prod<<endl;
-}   
+	distance = speed * time;
 
-    return 0;
+	cout << "\n";
+	cout << " Hour" << "     " << " Distance Traveled (miles)" << endl;
+	cout << " -----------------------------------------------" << endl;
+
+	for(int count = 1; count <= time; count++)
+	{
+		cout << " " << count << "\t\t" << speed*count << endl;
+	}
+
+	return 0;
 }
-
