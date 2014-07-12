@@ -76,7 +76,7 @@ year=year+1;
    cout <<"Minutes        Burned Calories  \n";
  cout<<"--------------------------------\n";
 
-for (int i = 0; i < 30; i+=5) {
+for (int i = 0; i <= 30; i+=5) {
  float calorie = i * 3.9;
  cout << i <<"              "<< calorie <<endl;
 }
@@ -113,16 +113,16 @@ for (int i = 0; i < 30; i+=5) {
                             }case 4:{
                 cout<<"Problem 6 here!"<<endl<<endl;
                 	float distance, speed, time;
-		   
+
 	cout << "Speed of the vehicle in miles per hour:  ";
 	cin >> speed;
-	
+
 	while(speed <= 0)
 	{
 	cout << "Speed of the vehicle in miles per hour:  ";
         cin >> speed;
 	}
-	
+
 	cout << "Hours has it traveled:   ";
 	cin >> time;
 
@@ -149,7 +149,7 @@ for (int i = 0; i < 30; i+=5) {
                 cout<<"Problem 7 here!"<<endl<<endl;
                     	int days;
 	float pennies = 0.01;	//worth of a penny
-	
+
         //Will not except anything less than 1
         do{
             cout <<"For how many days will the pay double?\n";
@@ -314,11 +314,11 @@ cout << "Average per month: " << average << endl;
 				max = num;
 		}
 	} while( num != SENTINEL );
-	
+
 	//display min, max, and average
 	cout << "Minimum: " << min << endl;
 	cout << "Maximum: " << max << endl;
-	
+
                 break;
          
             }default:{

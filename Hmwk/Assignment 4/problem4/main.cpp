@@ -14,7 +14,7 @@ int main() {
  cout <<"Minutes        Burned Calories  \n";
  cout<<"--------------------------------\n";
 
-for (int i = 0; i < 30; i+=5) {
+for (int i = 0; i <= 30; i+=5) {
  float calorie = i * 3.9;
  cout << i <<"              "<< calorie <<endl;
 }
