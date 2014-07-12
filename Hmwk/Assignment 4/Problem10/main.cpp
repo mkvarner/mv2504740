@@ -12,14 +12,13 @@ int main()
 { 
 int months = 12; 
 int years; 
-float monthRain, totalRain, average; 
+float month_rain, total_rain, average; 
 
 do{
     cout <<"Enter number of years:  ";
     cin >>years;
 }while(years<1);
-
-cout << "Enter the rainfall for each month must be greater than 0inches.\n"; 
+ 
 
 for ( int year = 1; year <= years; year++ ) 
 { 
@@ -27,17 +26,17 @@ for ( int month = 1; month <= months; month++ )
 { 
     do{
 cout << "Year " << year << " month " << month << ": "; 
-cin >> monthRain; 
-    }while(monthRain<0);
+cin >> month_rain; 
+    }while(month_rain<0);
 
-totalRain += monthRain; 
+total_rain += month_rain; 
 } 
 } 
 
 months = years*12;
-average = totalRain / (years * months); 
+average = total_rain / (months); 
 
 cout << "Months: " << months << endl; 
-cout << "Total Inches: " << totalRain << endl; 
-cout << "Average: " << average << endl; 
+cout << "Total Inches: " << total_rain << endl; 
+cout << "Average per month: " << average << endl; 
 } 

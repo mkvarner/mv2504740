@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Megan Varner
- *
  * Created on July 11, 2014, 12:50 PM
+ * If yougot paid a penny a day and it doubled
  */
 
 #include <iostream>
@@ -16,8 +16,7 @@ using namespace std;
 int main(int argc, char** argv) {
     
     	int days;
-	float pennies = 0.01;	//pennies = $0.01
-	float total;
+	float pennies = 0.01;	//worth of a penny
 	
         //Will not except anything less than 1
         do{
@@ -30,21 +29,13 @@ int main(int argc, char** argv) {
 	cout << "-------------------------------- \n";
 	for ( int count = 1; count <=days; count++)
 	{
-            
-        //Sets decimal place
-        cout.setf(ios::fixed);
-        cout.setf(ios::showpoint);
-        cout.precision(2);
-    		
+     cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
     
-	
-	cout << count << "\t\t$\t" << ((pow(2,days)-1)/100) << endl;
+	cout << count << "                     $" << ((pow(2,days)-1)/100) << endl;
         
-        
-       
-	
 	}
-      
 	//Displays the total 
 	cout << "-------------------------------- \n";
          printf("You will be paid $%.2lf",(pow(2,days)-1)/100);
