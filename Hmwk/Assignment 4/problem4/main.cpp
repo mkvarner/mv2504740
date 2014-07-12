@@ -5,30 +5,19 @@
  * Calculates calories burned on treadmill
  */
 
-#include <iostream>
-#include<iomanip>
+#include<iostream>
 
 using namespace std;
 
-int main(int argc, char** argv) {
+int main() {
     
-float number, prod=1.5;
+ cout <<"Minutes        Burned Calories  \n";
+ cout<<"--------------------------------\n";
 
-do{
-    
-    cout<<"Enter number of minutes run either 10, 15, 20, 25, or 30:\n";
-    cin>>number;
-}while(number>=30);
-
-while  (number>=30){
-    
-    prod=3.9*number;
-        
-    cout <<"Minutes        Calories Burned  \n";
-    cout<<"-------------------\n";
-    cout<<prod<<endl;
-}   
-
-    return 0;
+for (int i = 0; i < 30; i+=5) {
+ float calorie = i * 3.9;
+ cout << i <<"              "<< calorie <<endl;
 }
 
+ return 0;
+}

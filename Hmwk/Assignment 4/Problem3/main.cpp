@@ -12,12 +12,13 @@ using namespace std;
 int main(int argc, char** argv) { 
     
 
-float year=1,rate=1.5; 
+int year=1;
+float rate=1.5; 
 
 while(year<=25){ 
 cout<<"In year "<<year<<" the ocean will rise " <<rate<<" mm"<<endl; 
 rate=rate+1.5; 
-year=year + 1; 
+year=year+1; 
 } 
 return 0; 
 } 
