@@ -11,6 +11,7 @@
 #include<cmath>
 #include "stdio.h"
 #include "math.h"
+
 using namespace std;
 
 //User Libraries
@@ -23,27 +24,27 @@ using namespace std;
 int main(int argc, char** argv) {
     
     //Declare Variables
-    char choice;
+    int choice;
     
     //Loop until choice is not in the menu selection
     do{
         //Output the menu and input the choice
-        cout<<"Type 0 for Problem 1 from Gaddis"<<endl;
-        cout<<"Type 1 for Problem 3 from Gaddis"<<endl;
-        cout<<"Type 2 for Problem 4 from Gaddis"<<endl;
-        cout<<"Type 3 for Problem 5 from Gaddis"<<endl;
-        cout<<"Type 4 for Problem 6 from Gaddis"<<endl;
-        cout<<"Type 5 for Problem 7 from Gaddis"<<endl;
-        cout<<"Type 6 for Problem 8 from Gaddis"<<endl;
-        cout<<"Type 7 for Problem 10 from Gaddis"<<endl;
-        cout<<"Type 8 for Problem 11 from  Gaddis"<<endl;
-        cout<<"Type 9 for Problem 13 from Gaddis"<<endl;
+        cout<<"Type 1 for Problem 1 from Gaddis"<<endl;
+        cout<<"Type 2 for Problem 3 from Gaddis"<<endl;
+        cout<<"Type 3 for Problem 4 from Gaddis"<<endl;
+        cout<<"Type 4 for Problem 5 from Gaddis"<<endl;
+        cout<<"Type 5 for Problem 6 from Gaddis"<<endl;
+        cout<<"Type 6 for Problem 7 from Gaddis"<<endl;
+        cout<<"Type 7 for Problem 8 from Gaddis"<<endl;
+        cout<<"Type 8 for Problem 10 from Gaddis"<<endl;
+        cout<<"Type 9 for Problem 11 from  Gaddis"<<endl;
+        cout<<"Type 10 for Problem 13 from Gaddis"<<endl;
         cin>>choice;
         
         //Place problem solutions in the switch statement
         cout<<endl;
         switch(choice){
-            case  0:{
+            case  1:{
                 cout<<"Problem 1"<<endl<<endl;
                 int sum=0, number;
         do{
@@ -59,7 +60,7 @@ int main(int argc, char** argv) {
                 break;
                 
                 //Problem3
-            }case 1:{
+            }case 2:{
                 cout<<"Problem 3"<<endl<<endl;
                 int year=1;
 float rate=1.5; 
@@ -72,7 +73,7 @@ year=year+1;
                 break;
                 
                 //problem 4
-            }case 2:{
+            }case 3:{
    cout <<"Minutes        Burned Calories  \n";
  cout<<"--------------------------------\n";
 
@@ -84,7 +85,7 @@ for (int i = 0; i <= 30; i+=5) {
                 break; 
                 
                 //problem 5
-            }case 3:{
+            }case 4:{
                 cout<<"Problem 5"<<endl<<endl;
                 	float charge = 2500;
 	int year = 1;
@@ -110,7 +111,7 @@ for (int i = 0; i <= 30; i+=5) {
                 break;
                 
                 //problem 6
-                            }case 4:{
+                            }case 5:{
                 cout<<"Problem 6 here!"<<endl<<endl;
                 	float distance, speed, time;
 
@@ -145,7 +146,7 @@ for (int i = 0; i <= 30; i+=5) {
                 break;
                 
                 //problem 7
-                            }case 5:{
+                            }case 6:{
                 cout<<"Problem 7 here!"<<endl<<endl;
                     	int days;
 	float pennies = 0.01;	//worth of a penny
@@ -174,7 +175,7 @@ for (int i = 0; i <= 30; i+=5) {
                 break;
                 
                 //problem 8
-                            }case 6:{
+                            }case 7:{
                 cout<<"Problem 8 here!"<<endl<<endl;
                 int room=0;
 int floor=0;
@@ -221,7 +222,7 @@ cout << occup_rate << "% of the rooms are occupied."<<endl;
                 break;
                 
                 //problem 10
-                            }case 7:{
+                            }case 8:{
                 cout<<"Problem 10 here!"<<endl<<endl;
                 int months = 12; 
 int years; 
@@ -256,7 +257,7 @@ cout << "Average per month: " << average << endl;
                 break;
                 
                 //problem 11
-                            }case 8:{
+                            }case 9:{
                 cout<<"Problem 11 here!"<<endl<<endl;
                 
         int organisms = 0.0;
@@ -298,7 +299,7 @@ cout << "Average per month: " << average << endl;
                 break;
                 
                 //problem 13
-                            }case 9:{
+                            }case 10:{
                 cout<<"Problem 13 here!"<<endl<<endl;
                 	const int SENTINEL = -99;
 	int num;
@@ -325,7 +326,7 @@ cout << "Average per month: " << average << endl;
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
-    }while(choice>=0&&choice<=9);
+    }while(choice>=1&&choice<=10);
 
     //Exit stage right!
     return 0;
