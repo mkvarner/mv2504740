@@ -28,6 +28,7 @@ int main(int argc, char** argv)
     
       //loops until player enters correct number
   	  while(is_guess_correct == false) 
+              do{
   	  {
   		    if(attempts_count == 1) 
   		    {
@@ -66,12 +67,13 @@ int main(int argc, char** argv)
     				 }
   		    }
   	  }
+          }while(input_number>=1&&input_number<=56);
       //Play again?
       string choice;
       cout <<"\n";
       cout << "Press P to play again or any other key to exit game: ";
       cin >> choice;
-      //player chooses any other key than P/p quits
+      //player chooses any other key than P/p it will exit
       if(choice != "P" && choice != "p")
       {
         play_again = false;
