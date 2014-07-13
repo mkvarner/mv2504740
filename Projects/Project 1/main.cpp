@@ -31,18 +31,21 @@ int main(int argc, char** argv)
   	  {
   		    if(attempts_count == 1) 
   		    {
-  				  cout << "Guess a Number 1-56: ";
+                        cout <<"Lets play!\n";
+  				  cout << "I'm thinking of a number 1-56.... ";
+                                  cout <<"what is it?\n";
   		    }
   		    else
   		    {
-    				cout << "Guess Again : ";
+    				cout << "Guess Again: ";
               		    }
   		    cin >> input_number;
                         if(input_number == number)
   		    {
                      //Player wins!
-     cout << "Congratulation! You have guessed the correct number in " ;
-             cout << attempts_count << " attempts" << endl;
+     cout <<"\n";
+     cout << "You guessed the number in my head in " ;
+     cout << attempts_count << " attempts" << ". Now lets play again!"<<endl;
     				 is_guess_correct = true;
                                  //stops loop if true
   		    }
@@ -54,18 +57,19 @@ int main(int argc, char** argv)
     				 if(input_number < number) 
                       //if player enters number less than random number 
     				 {
-  cout << "Entered number is smaller than the number in my head." << endl;
+  cout << "Guess is smaller than the number I'm thinking of." << endl;
     				 }
     				else  
                          //if player enters number greater than random number
     				 {
-  cout << "Entered number is greater than the number in my head." << endl;
+  cout << "Guess is greater than the number I'm thinking of." << endl;
     				 }
   		    }
   	  }
       //Play again?
       string choice;
-      cout << "Press P to play again or any other key to terminate : ";
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit game: ";
       cin >> choice;
       //player chooses any other key than P/p quits
       if(choice != "P" && choice != "p")
