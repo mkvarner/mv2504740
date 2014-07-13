@@ -31,11 +31,11 @@ int main(int argc, char** argv)
   	  {
   		    if(attempts_count == 1) 
   		    {
-  				  cout << "Enter Number 1-56: ";
+  				  cout << "Guess a Number 1-56: ";
   		    }
   		    else
   		    {
-    				cout << "Enter Number Again : ";
+    				cout << "Guess Again : ";
               		    }
   		    cin >> input_number;
                         if(input_number == number)
