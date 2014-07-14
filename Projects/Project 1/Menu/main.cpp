@@ -23,7 +23,7 @@ int main(int argc, char** argv)
     //Loop until choice is not in the menu selection
     do{
         //Output the menu and input the choice
-        cout<<"Type 1 to guess the number I'm thinking of."<<endl;
+        cout<<"Type 1 to play...guess the number I'm thinking of."<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         
         cin>>choice;
@@ -32,7 +32,7 @@ int main(int argc, char** argv)
         cout<<endl;
         switch(choice){
             case  '1':{
-                cout<<"Guess the number!!!!!"<<endl<<endl;
+                cout<<"Guess the number I'm thinking of!!!!!"<<endl<<endl;
                 cout<<"\n";
              
     while(play_again == true)
@@ -77,26 +77,27 @@ int main(int argc, char** argv)
     				 if(input_number < number) 
                       //if player enters number less than random number 
     				 {
-  cout << "Guess is smaller than the number I'm thinking of." << endl;
+  cout << "Your guess is smaller than the number I'm thinking of." << endl;
     				 }
     				else  
                          //if player enters number greater than random number
     				 {
-  cout << "Guess is greater than the number I'm thinking of." << endl;
+  cout << "Your guess is greater than the number I'm thinking of." << endl;
     				 }
   		    }
   	  }
       //Play again?
       string choice;
       cout <<"\n";
-      cout << "Press P to play again or any other key to exit game: ";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
       cin >> choice;
       //player chooses any other key than P/p it will exit
       if(choice != "P" && choice != "p")
       {
         play_again = false;
       }
-	
+    }
       break;
 
             }
@@ -104,8 +105,8 @@ int main(int argc, char** argv)
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
-    }
+    }while(choice == '1'); 
 
     //Exit stage right!
     return 0;
-    } while(choice == '1');   }
+    }   
