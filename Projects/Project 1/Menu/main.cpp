@@ -108,4 +108,4 @@ int main(int argc, char** argv)
 
     //Exit stage right!
     return 0;
-    } while(choice=='1');   }
+    } while(choice == '1');   }

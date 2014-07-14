@@ -76,7 +76,8 @@ int main(int argc, char** argv)
       {
         play_again = false;
       }
+    }
 	
       //Exit Stage right
    return 0; 
-    }}
+    }
