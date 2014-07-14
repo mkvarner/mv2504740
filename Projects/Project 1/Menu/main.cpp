@@ -96,9 +96,10 @@ int main(int argc, char** argv)
         play_again = false;
       }
 	
-                break;
+      break;
 
-            }default:{
+            }
+                    default:{
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
