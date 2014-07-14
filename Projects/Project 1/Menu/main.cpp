@@ -15,7 +15,25 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-    bool play_again = true;
+
+  //Declare Variables
+    char choice;
+    
+    //Loop until choice is not in the menu selection
+    do{
+        //Output the menu and input the choice
+        cout<<"Type X to guess the number I'm thinking of."<<endl;
+        cout<<"Type anything else to exit menu"<<endl;
+        
+        cin>>choice;
+        
+        //Place problem solutions in the switch statement
+        cout<<endl;
+        switch(choice){
+            case  '1':{
+                cout<<"Guess the number!!!!!"<<endl<<endl;
+                cout<<"\n";
+                    bool play_again = true;
     while(play_again == true)
     {
       srand(time(NULL));  
@@ -28,6 +46,7 @@ int main(int argc, char** argv)
     
       //loops until player enters correct number
   	  while(is_guess_correct == false) 
+              
   	  {
   		    if(attempts_count == 1) 
   		    {
@@ -77,6 +96,14 @@ int main(int argc, char** argv)
         play_again = false;
       }
 	
-      //Exit Stage right
-   return 0; 
-    }}
+                break;
+
+            }default:{
+                cout<<"Exit Menu"<<endl<<endl;
+            }
+        };
+    }while(choice=='X');
+
+    //Exit stage right!
+    return 0;
+    }    }
