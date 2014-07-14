@@ -18,11 +18,12 @@ int main(int argc, char** argv)
 
   //Declare Variables
     char choice;
+           bool play_again = true;
     
     //Loop until choice is not in the menu selection
     do{
         //Output the menu and input the choice
-        cout<<"Type X to guess the number I'm thinking of."<<endl;
+        cout<<"Type 1 to guess the number I'm thinking of."<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         
         cin>>choice;
@@ -33,7 +34,7 @@ int main(int argc, char** argv)
             case  '1':{
                 cout<<"Guess the number!!!!!"<<endl<<endl;
                 cout<<"\n";
-                    bool play_again = true;
+             
     while(play_again == true)
     {
       srand(time(NULL));  
@@ -103,8 +104,8 @@ int main(int argc, char** argv)
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
-    }while(choice=='X');
+    }
 
     //Exit stage right!
     return 0;
-    }    }
+    } while(choice=='1');   }
