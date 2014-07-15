@@ -25,7 +25,6 @@ int main(int argc, char** argv)
         //Output the menu and input the choice
         cout<<"Type 1 to play...guess the number I'm thinking of."<<endl;
         cout<<"Type anything else to exit menu"<<endl;
-        
         cin>>choice;
         
         //Place problem solutions in the switch statement
@@ -34,22 +33,25 @@ int main(int argc, char** argv)
             case  '1':{
                 cout<<"Guess the number I'm thinking of!!!!!"<<endl<<endl;
                 cout<<"\n";
-             
+             //Input anything other than 1 exit menu
+                
     while(play_again == true)
     {
       srand(time(NULL));  
-      int number =  rand() % 56 + 1; 
+      int head =  rand() % 56 + 1; 
       //stores random number between 1-56
+      //acts as number in my head from the chief of the game
+      
       bool is_guess_correct = false; 
-  	  int input_number;
-  	  int attempts_count = 1; 
+  	  int guess;
+  	  int attempts = 1; 
           // number of attempts player has made
     
       //loops until player enters correct number
   	  while(is_guess_correct == false) 
               
   	  {
-  		    if(attempts_count == 1) 
+  		    if(attempts == 1) 
   		    {
                         cout <<"Lets play!\n";
   				  cout << "I'm thinking of a number 1-56.... ";
@@ -59,28 +61,30 @@ int main(int argc, char** argv)
   		    {
     				cout << "Guess Again: ";
               		    }
-  		    cin >> input_number;
-                        if(input_number == number)
+  		    cin >> guess;
+                        if(guess == head)
   		    {
                      //Player wins!
      cout <<"\n";
      cout << "You guessed the number in my head in " ;
-     cout << attempts_count << " attempts" << ". Now lets play again!"<<endl;
+     cout << attempts << " attempts" << ". Now lets play again!"<<endl;
     				 is_guess_correct = true;
                                  //stops loop if true
   		    }
   		    else
   		    {
             //Player needs to keep guessing
-    				 attempts_count++; 
+    				 attempts++; 
                                  // attempts
-    				 if(input_number < number) 
+    				 if(guess < head) 
+                                     
                       //if player enters number less than random number 
     				 {
   cout << "Your guess is smaller than the number I'm thinking of." << endl;
     				 }
     				else  
-                         //if player enters number greater than random number
+                                    
+                    //if player enters number greater than random number
     				 {
   cout << "Your guess is greater than the number I'm thinking of." << endl;
     				 }
@@ -92,7 +96,8 @@ int main(int argc, char** argv)
       cout << "Press P to play again or any other key to exit this game";
       cout <<" and return to main menu:";
       cin >> choice;
-      //player chooses any other key than P/p it will exit
+      //player chooses any other key other than P/p it will exit and return 
+      //to menu
       if(choice != "P" && choice != "p")
       {
         play_again = false;
@@ -101,6 +106,8 @@ int main(int argc, char** argv)
       break;
 
             }
+            //If player exits game returns to menu and press anything other
+            //than 1 to play game quits menu and ends run
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
             }
