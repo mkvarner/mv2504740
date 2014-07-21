@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Megan Varner 
  * Created on July 13, 2014, 9:03 AM
- * Guess the number in my head game
+ * Project 1
  */
 
 //Libraries
@@ -112,6 +112,8 @@ int main(int argc, char** argv)
  
 
             }
+            
+            //Add with me
                   case  '2':{
                       
 while(play_again == true)
@@ -119,10 +121,12 @@ while(play_again == true)
   srand(time(0));
   const int SEED = 999;
   int num1, num2, num3, answer;
- 
+  
+  //Generates random number
   num1 = 1 + rand() % SEED;
   num2 = 1 + rand() % SEED;
  
+  //outputs the addition problem
   cout << "Lets get smart! Add the numbers and then enter your answer...\n";
   cout<<"\n";
   cout << setw(5) << num1 << endl;
@@ -132,14 +136,17 @@ while(play_again == true)
   num3 = num1 + num2;
   std::cin.get();
  
+  
   cout<<"\n";
   cout << num3 << " is the correct answer, ";
    
+  //If answer is correct outputs
   if (answer == num3)
     {
       cout << "You're so smart!" << endl;
     }
 
+  //If answer is wrong outputs
   else
     {
       cout << "Nice try. Want to play again?" << endl;}
@@ -156,16 +163,19 @@ while(play_again == true)
                       
                       break;
           }
+                  //Subtract with me
             case  '3':{
                 while(play_again == true)
     {
   srand(time(0));
   const int SEED = 999;
   int num1, num2, num3, answer;
- 
+  
+  //generates random number
   num1 = 1 + rand() % SEED;
   num2 = 1 + rand() % SEED;
  
+  //outputs subtraction problem
   cout << "Lets get smart! Add the numbers and then enter your answer...\n";
   cout<<"\n";
   cout << setw(5) << num1 << endl;
@@ -178,15 +188,18 @@ while(play_again == true)
   cout<<"\n";
   cout << num3 << " is the correct answer, ";
    
+  //outputs if answer is correct
   if (answer == num3)
     {
       cout << "You're so smart!" << endl;
       cout<< "Want to go another round?\n";
     }
 
+  //outputs if answer is wrong
   else
     {
       cout << "Nice try. Want to play again?" << endl;}
+  
     string choice;
       cout <<"\n";
       cout << "Press P to play again or any other key to exit this game";
@@ -198,15 +211,17 @@ while(play_again == true)
         play_again = false;
       }}
                 
-                break;
-            
-          }
+                 break;
+            }
+          
+            //exit menu when 1,2, or 3, are not entered
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
+       
     }while(choice >= '1' && choice <='3'); //ends loop i.e. arcade
 
     //Exit stage right!
     return 0;
-    }   
+    } 
