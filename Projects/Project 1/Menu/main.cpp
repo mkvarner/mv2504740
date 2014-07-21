@@ -10,6 +10,9 @@
 #include <cstdlib>
 #include <time.h>
 #include <string> 
+#include<iomanip>
+#include<cmath>
+#include<ctime>
 
 using namespace std;
 
@@ -22,9 +25,17 @@ int main(int argc, char** argv)
     
     //Loop until choice is not in the menu selection
     do{
+        //Start
+        cout<<"Welcome to my arcade!\n";
+        cout<<"Lets PLAY!\n";
+        cout<<"\n";
+        
         //Output the menu and input the choice
-        cout<<"Type 1 to play...guess the number I'm thinking of."<<endl;
+        cout<<"Type 1 to play...guess the number I'm thinking of"<<endl;
+        cout<<"Type 2 to play...Add with me"<<endl;
+        cout<<"Type 3 to play...Subtract with me"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
+        
         cin>>choice;
         
         //Place problem solutions in the switch statement
@@ -33,25 +44,22 @@ int main(int argc, char** argv)
             case  '1':{
                 cout<<"Guess the number I'm thinking of!!!!!"<<endl<<endl;
                 cout<<"\n";
-             //Input anything other than 1 exit menu
-                
+             
     while(play_again == true)
     {
       srand(time(NULL));  
-      int head =  rand() % 56 + 1; 
+      int number =  rand() % 56 + 1; 
       //stores random number between 1-56
-      //acts as number in my head from the chief of the game
-      
       bool is_guess_correct = false; 
-  	  int guess;
-  	  int attempts = 1; 
+  	  int input_number;
+  	  int attempts_count = 1; 
           // number of attempts player has made
     
       //loops until player enters correct number
   	  while(is_guess_correct == false) 
               
   	  {
-  		    if(attempts == 1) 
+  		    if(attempts_count == 1) 
   		    {
                         cout <<"Lets play!\n";
   				  cout << "I'm thinking of a number 1-56.... ";
@@ -61,30 +69,28 @@ int main(int argc, char** argv)
   		    {
     				cout << "Guess Again: ";
               		    }
-  		    cin >> guess;
-                        if(guess == head)
+  		    cin >> input_number;
+                        if(input_number == number)
   		    {
                      //Player wins!
      cout <<"\n";
      cout << "You guessed the number in my head in " ;
-     cout << attempts << " attempts" << ". Now lets play again!"<<endl;
+     cout << attempts_count << " attempts" << ". Now lets play again!"<<endl;
     				 is_guess_correct = true;
                                  //stops loop if true
   		    }
   		    else
   		    {
             //Player needs to keep guessing
-    				 attempts++; 
+    				 attempts_count++; 
                                  // attempts
-    				 if(guess < head) 
-                                     
+    				 if(input_number < number) 
                       //if player enters number less than random number 
     				 {
   cout << "Your guess is smaller than the number I'm thinking of." << endl;
     				 }
     				else  
-                                    
-                    //if player enters number greater than random number
+                         //if player enters number greater than random number
     				 {
   cout << "Your guess is greater than the number I'm thinking of." << endl;
     				 }
@@ -96,23 +102,110 @@ int main(int argc, char** argv)
       cout << "Press P to play again or any other key to exit this game";
       cout <<" and return to main menu:";
       cin >> choice;
-      //player chooses any other key other than P/p it will exit and return 
-      //to menu
+      //player chooses any other key than P/p it will exit
       if(choice != "P" && choice != "p")
       {
         play_again = false;
       }
     }
       break;
+ 
 
             }
-            //If player exits game returns to menu and press anything other
-            //than 1 to play game quits menu and ends run
+                  case  '2':{
+                      
+while(play_again == true)
+    {
+  srand(time(0));
+  const int SEED = 999;
+  int num1, num2, num3, answer;
+ 
+  num1 = 1 + rand() % SEED;
+  num2 = 1 + rand() % SEED;
+ 
+  cout << "Lets get smart! Add the numbers and then enter your answer...\n";
+  cout<<"\n";
+  cout << setw(5) << num1 << endl;
+  cout << "+ " << setw(3) << num2 << endl;
+  cout << "_____" << endl;
+  cin >> answer;
+  num3 = num1 + num2;
+  std::cin.get();
+ 
+  cout<<"\n";
+  cout << num3 << " is the correct answer, ";
+   
+  if (answer == num3)
+    {
+      cout << "You're so smart!" << endl;
+    }
+
+  else
+    {
+      cout << "Nice try. Want to play again?" << endl;}
+    string choice;
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
+      cin >> choice;
+      //player chooses any other key than P/p it will exit
+      if(choice != "P" && choice != "p")
+      {
+        play_again = false;
+      }}
+                      
+                      break;
+          }
+            case  '3':{
+                while(play_again == true)
+    {
+  srand(time(0));
+  const int SEED = 999;
+  int num1, num2, num3, answer;
+ 
+  num1 = 1 + rand() % SEED;
+  num2 = 1 + rand() % SEED;
+ 
+  cout << "Lets get smart! Add the numbers and then enter your answer...\n";
+  cout<<"\n";
+  cout << setw(5) << num1 << endl;
+  cout << "- " << setw(3) << num2 << endl;
+  cout << "_____" << endl;
+  cin >> answer;
+  num3 = num1 - num2;
+  std::cin.get();
+ 
+  cout<<"\n";
+  cout << num3 << " is the correct answer, ";
+   
+  if (answer == num3)
+    {
+      cout << "You're so smart!" << endl;
+      cout<< "Want to go another round?\n";
+    }
+
+  else
+    {
+      cout << "Nice try. Want to play again?" << endl;}
+    string choice;
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
+      cin >> choice;
+      //player chooses any other key than P/p it will exit
+      if(choice != "P" && choice != "p")
+      {
+        play_again = false;
+      }}
+                
+                break;
+            
+          }
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
             }
         };
-    }while(choice == '1'); 
+    }while(choice >= '1' && choice <='3'); //ends loop i.e. arcade
 
     //Exit stage right!
     return 0;
