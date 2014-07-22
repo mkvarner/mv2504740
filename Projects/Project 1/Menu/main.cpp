@@ -15,6 +15,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
+    // LeepFrog Mathematics – Game
 
   //Declare Variables
     char choice;
