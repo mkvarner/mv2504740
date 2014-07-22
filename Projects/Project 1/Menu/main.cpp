@@ -32,12 +32,13 @@ int main(int argc, char** argv)
         cout<<"Type 2 to play...Add with me"<<endl;
         cout<<"Type 3 to play...Subtract with me"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
-        
         cin>>choice;
-        
+        play_again=true;
         //Place problem solutions in the switch statement
         cout<<endl;
         switch(choice){
+            //GAME 1
+            
             case  '1':{
                 cout<<"Guess the number I'm thinking of!!!!!"<<endl<<endl;
                 cout<<"\n";
@@ -217,6 +218,8 @@ while(play_again == true)
             }
         };
        
+        
+        
     }while(choice >= '1' && choice <='3'); //ends loop i.e. arcade
 
     //Exit stage right!
