@@ -7,9 +7,7 @@
 
 //Libraries
 #include <iostream>
-#include <cstdlib>
-#include <time.h>
-#include <string> 
+#include <cstdlib> 
 #include<iomanip>
 #include<cmath>
 
