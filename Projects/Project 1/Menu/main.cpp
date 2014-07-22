@@ -12,7 +12,6 @@
 #include <string> 
 #include<iomanip>
 #include<cmath>
-#include<ctime>
 
 using namespace std;
 
@@ -119,12 +118,12 @@ int main(int argc, char** argv)
 while(play_again == true)
     {
   srand(time(0));
-  const int SEED = 999;
+  const int ran = 999;
   int num1, num2, num3, answer;
   
   //Generates random number
-  num1 = 1 + rand() % SEED;
-  num2 = 1 + rand() % SEED;
+  num1 = 1 + rand() % ran;
+  num2 = 1 + rand() % ran;
  
   //outputs the addition problem
   cout << "Lets get smart! Add the numbers and then enter your answer...\n";
@@ -168,12 +167,12 @@ while(play_again == true)
                 while(play_again == true)
     {
   srand(time(0));
-  const int SEED = 999;
+  const int ran = 999;
   int num1, num2, num3, answer;
   
   //generates random number
-  num1 = 1 + rand() % SEED;
-  num2 = 1 + rand() % SEED;
+  num1 = 1 + rand() % ran;
+  num2 = 1 + rand() % ran;
  
   //outputs subtraction problem
   cout << "Lets get smart! Add the numbers and then enter your answer...\n";
