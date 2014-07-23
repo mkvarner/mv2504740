@@ -151,7 +151,7 @@ int main(int argc, char** argv) {
         cout<< fallingDistance(intrvl) << "m\n";
                   cout << "\n";
                      for (int i=1; i<=10; ++i)
-       cout << i << " seconds of fall = " << fallingDistance(i)<< " meters.\n" ;
+       cout << i << " seconds of fall = " << fallingDistance(i)<< " meters.\n";
            cout <<"\n\n\n\n";
                 break;
             }
@@ -170,25 +170,20 @@ int main(int argc, char** argv) {
             case 8:{
                 
                        float ftrVal, annInt, numYears;
-                            cout << "\nSuppose you want to deposit a certain amount of money into a savings account, and then "
-                                        "leave it alone to draw interest for the next 10 years. At the end of 10 years you would like "
-                                        "to have $10,000 in the account. How much do you need to deposit today to make that "
-                                        "happen? To find out you can use the following program, which asks you to input how much money you would like to see in your  savings account"
-                                    " after so many years.\n";
-                            cout << "\n Lets begin...\n";
-                            cout << "\nWhat is the annual interest rate on your savings account(%)?\n";
+                     
+                 cout << "Annual interest rate on your savings account(%):\n";
                             cin >> annInt;
                             annInt= annInt/100;
-                            cout << "\nHow much money would you like to see in your savings account?\n";
+                            cout << "Amount of money would you like to see in your savings account:\n";
                             cin >> ftrVal;
-                            cout << "\nFor how many years are you willing to keep the $" << ftrVal<<
-                                    " in your savings account?\n";
+             cout << "For how many years will you keep the $" << ftrVal<<endl;
+                                  cout<<" in your savings account?\n";
                             cin >> numYears;
 
-                            cout << "\nThank you. You will have to deposit $";
+                            cout << "You will have to deposit $";
                             cout <<  presentValue(ftrVal, annInt, numYears); 
                             cout << " into your savings account.\n ";
-                                                                 cout <<"\n\n\n\n";
+                          cout <<"\n\n\n\n";
                         
                 break;
             }
@@ -196,27 +191,26 @@ int main(int argc, char** argv) {
                                                 char choice, a, b, A, B;
                             choice = toupper(choice);
 
-                            cout << "\nThis program computes and displays the charges for a patient's hospital stay.\n";
-                            cout << "\nIn order for the program to compute the charges for the patient's hospital stay, "
-                                 <<"the program needs to know the following:\n";
-                            cout << "\nWas the patient admitted as an in-patient or an out-patient?\nType \"A\" if patient was admited as an in-patient.\n";
-                            cout <<"Type \"B\" if the patient was admitted as an out-patient.\n";
+  cout << "Was the patient admitted as an in-patient or an out-patient?\n";
+          cout<< "Type \A\ if patient was admited as an in-patient.\n";
+        cout <<"Type \"B\" if the patient was admitted as an out-patient.\n";
                             cin >> choice;
                             int dys, rate, srvCsts, medCsts;
                             if ((choice == 'A')|| (choice== 'a')){
-                                cout << "\nHow many days did the patient stay at the hospital?\n";
+           cout << "How many days did the patient stay at the hospital?\n";
                                 cin >> dys;
-                                cout << "\nHow much does it cost to stay in the hospital one day?\n";
+         cout << "How much does it cost to stay in the hospital one day?\n";
                                  cin >> rate ;
-                                cout << "\nHow much does the hospital charge for its services (lab tests, etc.)?\n";
+     cout << "How much does the hospital charge for its services (lab tests, etc.)?\n";
                                  cin >> srvCsts ;
-                                cout << "\nHow much does the customer have to pay for his or her medications?\n";
+         cout << "How much does the customer have to pay for his or her medications?\n";
                                  cin >> medCsts ;
-                                 cout << "\nThank you. The total charge for this patients stay in the hospital is $"<< totalCharge(dys, rate, srvCsts, medCsts) << ".\n";
+    cout << "The total charge for this patients stay in the hospital is $";
+            cout<< totalCharge(dys, rate, srvCsts, medCsts) << ".\n";
                             }
 
                             if ((choice == 'B')|| (choice == 'b')){
-                               cout << "\nHow much does the hospital charge for its services (lab tests, etc.)?\n";
+         cout << "\nHow much does the hospital charge for its services (lab tests, etc.)?\n";
                                cin >> srvCsts;
                                cout << "\nHow much does the customer have to pay for his or her medications?\n";
                                cin >> medCsts;
