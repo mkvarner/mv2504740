@@ -90,7 +90,7 @@ int main(int argc, char** argv) {
                             cout << "Item's markup percentage:\n";
                             cin >> per;
                         }
-                        cout << "The items retail price is $" << calculateRetail(price, per)<< ".\n";
+  cout << "The items retail price is $" << calculateRetail(price, per)<<endl;
                         cout << "\n\n\n\n";
                
                         break;
@@ -104,33 +104,33 @@ int main(int argc, char** argv) {
                 
                     float ne,se, nw, sw; 
                        
-                            cout << "Northeast divisions sales this quarter:\n"; 
+                    cout << "Northeast divisions sales this quarter:\n"; 
                             cin >> ne;
-                            while (ne <=0){ // dollar less than 0
-                                cout << "Please type in a correct dollar amount.\n";
+                     while (ne <=0){ // dollar less than 0
+                          cout << "Please type in a correct dollar amount.\n";
                                 cin >> ne;
                             }
-                            cout << "Southeast divisions sales this quarter:\n"; 
+                 cout << "Southeast divisions sales this quarter:\n"; 
                             cin >> se;
                             while (se <=0){// less than or equal to 0.
-                                cout << "Please type in a correct dollar amount.\n";
+                        cout << "Please type in a correct dollar amount.\n";
                                 cin >> se;
                             }
-                            cout << "Northwest divisions sales this quarter:\n"; 
+                    cout << "Northwest divisions sales this quarter:\n"; 
                             cin >> nw;
                             while (nw <=0){// less than or equal to 0.
-                                cout << "Please type in a correct dollar amount.\n";
+                       cout << "Please type in a correct dollar amount.\n";
                                 cin >> nw;
                             }
-                            cout << "Southwest division sales this quarter:\n"; 
+                       cout << "Southwest division sales this quarter:\n"; 
                             cin >> sw;
-                            while (sw <=0){// checks for dollars amount less than or equal to 0.
-                                cout << "Please type in a correct dollar amount.\n";
+                            while (sw <=0){// less than or equal to 0.
+                     cout << "Please type in a correct dollar amount.\n";
                                 cin >> sw;
                             }
-                            findHighest(ne,se, nw, sw); // this function will return the highest value
+     findHighest(ne,se, nw, sw); // this function will return the highest value
                             cout << "\nThey made $"; 
-                            cout << getSales(ne,se, nw, sw);// this function will return the amount the highest function made
+                            cout << getSales(ne,se, nw, sw);// function
                             cout << " in sales.\n";
                                                     cout <<"\n\n\n\n";
 
@@ -142,15 +142,17 @@ int main(int argc, char** argv) {
                 break;
             }
             case 5:{ 
-                  float intrvl;//Declaration of variables
-                           cout<< "\nThis program determines the distance an object falls due to gravity in a specific time period.\n ";
-                            cout << "\nPlease enter a number of seconds, and the computer will tell you how much distance an object falling would cover during that time.\n";
+                  float intrvl;
+                  
+         cout << "Enter a number of seconds:\n";
                             cin >> intrvl; // takes in the time
-                            cout << "\nThankyou, if an object was to fall with respect to earths gravity for " << intrvl<< " seconds, it would cover a distance of " << fallingDistance(intrvl) << " meters.\n";
-                            cout << "\nThis next part demonstrates the function.\n";
-                            for (int i=1; i<=10; ++i)
-                                cout << i << " seconds of fall = " << fallingDistance(i)<< " meters.\n" ;
-                                                  cout <<"\n\n\n\n";
+        cout<<"If an object was to fall with respect to earths gravity for\n";
+        cout<< intrvl<< " seconds, it would cover a distance of\n";
+        cout<< fallingDistance(intrvl) << "m\n";
+                  cout << "\n";
+                     for (int i=1; i<=10; ++i)
+       cout << i << " seconds of fall = " << fallingDistance(i)<< " meters.\n" ;
+           cout <<"\n\n\n\n";
                 break;
             }
             case 6:{
