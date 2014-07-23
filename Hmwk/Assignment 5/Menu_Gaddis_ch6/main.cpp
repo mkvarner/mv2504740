@@ -81,13 +81,13 @@ int main(int argc, char** argv) {
                         cout << "Enter the item's wholesale price:\n";
                         cin >> price;
                         while (price<=0){
-                            cout << "Enter the item's CORRECT wholesale price:\n";
+                            cout << "Enter the item's wholesale price:\n";
                             cin >> price;
                         }
-                        cout <<"Item's markup percentage\n";
+                        cout <<"Item's markup percentage:\n";
                         cin >>per;
                         while (per<=0){
-                            cout << "Enter the item's CORRECT markup percentage:\n";
+                            cout << "Item's markup percentage:\n";
                             cin >> per;
                         }
                         cout << "The items retail price is $" << calculateRetail(price, per)<< ".\n";
@@ -102,27 +102,27 @@ int main(int argc, char** argv) {
             }
             case 3:{
                 
-                    float ne,se, nw, sw; // Declaration Of variables
+                    float ne,se, nw, sw; 
                        
-                            cout << "Sales did the Northeast divisions make this quarter:\n"; 
+                            cout << "Northeast divisions sales this quarter:\n"; 
                             cin >> ne;
                             while (ne <=0){ // dollar less than 0
                                 cout << "Please type in a correct dollar amount.\n";
                                 cin >> ne;
                             }
-                            cout << "How much sales did the Southeast divisions make this quarter?\n"; 
+                            cout << "Southeast divisions sales this quarter:\n"; 
                             cin >> se;
                             while (se <=0){// less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
                                 cin >> se;
                             }
-                            cout << "\nHow much sales did the Northwest divisions make this quarter?\n"; 
+                            cout << "Northwest divisions sales this quarter:\n"; 
                             cin >> nw;
-                            while (NWSales <=0){// less than or equal to 0.
+                            while (nw <=0){// less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
                                 cin >> nw;
                             }
-                            cout << "\nHow much sales did the Southwest divisions make this quarter?\n"; 
+                            cout << "Southwest division sales this quarter:\n"; 
                             cin >> sw;
                             while (sw <=0){// checks for dollars amount less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
