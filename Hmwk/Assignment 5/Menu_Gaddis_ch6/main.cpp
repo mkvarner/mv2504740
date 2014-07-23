@@ -192,55 +192,55 @@ int main(int argc, char** argv) {
                             choice = toupper(choice);
 
   cout << "Was the patient admitted as an in-patient or an out-patient?\n";
-          cout<< "Type \A\ if patient was admited as an in-patient.\n";
+          cout<< "Type \"A\" if patient was admitted as an in-patient.\n";
         cout <<"Type \"B\" if the patient was admitted as an out-patient.\n";
                             cin >> choice;
                             int dys, rate, srvCsts, medCsts;
                             if ((choice == 'A')|| (choice== 'a')){
-           cout << "How many days did the patient stay at the hospital?\n";
+           cout << "For how many days:\n";
                                 cin >> dys;
-         cout << "How much does it cost to stay in the hospital one day?\n";
+         cout << "Cost to stay for one day:\n";
                                  cin >> rate ;
-     cout << "How much does the hospital charge for its services (lab tests, etc.)?\n";
+     cout << "Hospital charge for its services:\n";
                                  cin >> srvCsts ;
-         cout << "How much does the customer have to pay for his or her medications?\n";
+         cout << "Cost for customer for medications:\n";
                                  cin >> medCsts ;
-    cout << "The total charge for this patients stay in the hospital is $";
+    cout << "The total charge for patient's stay in the hospital is $";
             cout<< totalCharge(dys, rate, srvCsts, medCsts) << ".\n";
                             }
 
                             if ((choice == 'B')|| (choice == 'b')){
-         cout << "\nHow much does the hospital charge for its services (lab tests, etc.)?\n";
+         cout << "Hospital charge for its services:\n";
                                cin >> srvCsts;
-                               cout << "\nHow much does the customer have to pay for his or her medications?\n";
+                               cout << "Cost for customer for medications:\n";
                                cin >> medCsts;
-                               cout << "\nThank you. The total charge for this patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
+cout << "Total charge for patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
                             }   
                             //Exit function main
                                                     cout << "\n\n\n\n";   
                                         break;
             }
              case 10:{
-                                        
-                       
-              cout << "\nThis program determines the profit from the sale of your stock.\n";
-                            float numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn;
+             
+                float numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn;
                             int check;
-                            cout << "\nEnter the number of shares:\n";
+                            cout << "Enter the number of shares:\n";
                             cin >> numShrs;
-                            cout << "\nEnter the sale price per share:\n";
+                            cout << "Enter the sale price per share:\n";
                             cin >> salPrice;
-                            cout << "\nEnter the sale commission paid:\n";
+                            cout << "Enter the sale commission paid:\n";
                             cin >> salCmmsn;
-                            cout << "\nEnter the purchase price per share:\n";
+                            cout << "Enter the purchase price per share:\n";
                             cin >> prchPrc;
-                            cout << "\nEnter the purchase commission paid:\n";
+                            cout << "Enter the purchase commission paid:\n";
                             cin >> prchCmmsn;
-                            check = profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn);
+     check = profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn);
                             if ((check)>0)
-                            cout << "\nYour total profit is $" << profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn)<< "."<< endl;
+cout << "\nYour total profit is $";
+     cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn)<< "."<< endl;
                             if ((check)<=0)
-                            cout << "\nYou did not make a profit. You lost  " << profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars." <<endl;
+cout << "\nYou did not make a profit. You lost \n";
+cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars.\n"; 
 
                             cout << "\n\n\n\n";
 
@@ -337,13 +337,13 @@ float getSales(float a, float b, float c, float d ){
 void findHighest(float a, float b, float c, float d){
      
     if ( a>b && a> c && a> d)
-        cout << "\nThe North East division had the greatest sales for the quarter.\n";
+    cout << "The North East division had the greatest sales for the quarter.\n";
      if ( b>a && b> c && b> d)
-        cout << "\nThe SouthEast division had the greatest sales for the quarter.\n";
+     cout << "The SouthEast division had the greatest sales for the quarter.\n";
      if ( c>a && c> b && c> d)
-        cout << "\nThe NorthWest division had the greatest sales for the quarter.\n";
-      if ( d>a && d> b && d> c)
-        cout << "\nThe SouthWest division had the greatest sales for the quarter.\n";
+     cout << "The NorthWest division had the greatest sales for the quarter.\n";
+    if ( d>a && d> b && d> c)
+     cout << "The SouthWest division had the greatest sales for the quarter.\n";
      
 
 }
