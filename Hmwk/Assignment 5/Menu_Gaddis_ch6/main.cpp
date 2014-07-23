@@ -102,36 +102,35 @@ int main(int argc, char** argv) {
             }
             case 3:{
                 
-                    float NESales,SESales, NWSales, SWSales; // Declaration Of variables
-                            //Promts user
-                            cout << "\nThis program determines which  division of your company (Northeast, Southeast, Northwest, Southwest) had the greatest sales for the quarter.\n";
-                            cout << "\nHow much sales did the Northeast divisions make this quarter?\n"; 
-                            cin >> NESales;// Gets the NESales
-                            while (NESales <=0){ // checks for dollars amount less than or equal to 0.
+                    float ne,se, nw, sw; // Declaration Of variables
+                       
+                            cout << "Sales did the Northeast divisions make this quarter:\n"; 
+                            cin >> ne;
+                            while (ne <=0){ // dollar less than 0
                                 cout << "Please type in a correct dollar amount.\n";
-                                cin >> NESales;
+                                cin >> ne;
                             }
-                            cout << "\nHow much sales did the Southeast divisions make this quarter?\n"; 
-                            cin >> SESales;// Gets the SESales
-                            while (SESales <=0){// checks for dollars amount less than or equal to 0.
+                            cout << "How much sales did the Southeast divisions make this quarter?\n"; 
+                            cin >> se;
+                            while (se <=0){// less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
-                                cin >> SESales;
+                                cin >> se;
                             }
                             cout << "\nHow much sales did the Northwest divisions make this quarter?\n"; 
-                            cin >> NWSales;// Gets the NWSALES
-                            while (NWSales <=0){// checks for dollars amount less than or equal to 0.
+                            cin >> nw;
+                            while (NWSales <=0){// less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
-                                cin >> NWSales;
+                                cin >> nw;
                             }
                             cout << "\nHow much sales did the Southwest divisions make this quarter?\n"; 
-                            cin >> SWSales;
-                            while (SWSales <=0){// checks for dollars amount less than or equal to 0.
+                            cin >> sw;
+                            while (sw <=0){// checks for dollars amount less than or equal to 0.
                                 cout << "Please type in a correct dollar amount.\n";
-                                cin >> SWSales;
+                                cin >> sw;
                             }
-                            findHighest(NESales,SESales, NWSales, SWSales); // this function will return the highest value
+                            findHighest(ne,se, nw, sw); // this function will return the highest value
                             cout << "\nThey made $"; 
-                            cout << getSales(NESales,SESales, NWSales, SWSales);// this function will return the amount the highest function made
+                            cout << getSales(ne,se, nw, sw);// this function will return the amount the highest function made
                             cout << " in sales.\n";
                                                     cout <<"\n\n\n\n";
 
