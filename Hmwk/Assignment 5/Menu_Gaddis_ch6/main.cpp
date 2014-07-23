@@ -77,22 +77,20 @@ int main(int argc, char** argv) {
         switch(choice){
             case 1:{   
                 
-                        int wPrc, mPrc;
-                        cout << "\nThis program asks you to enter and item's wholesale cost and its markup percentage, "
-                             <<  "so that it can calculate that items retail price for you.\n";
-                        cout << "\nPlease enter the item's wholesale price:\n";
-                        cin >> wPrc;
-                        while (wPrc<=0){
-                            cout << "\nPlease enter the item's CORRECT wholesale price:\n";
-                            cin >> wPrc;
+                        int price, per;
+                        cout << "Enter the item's wholesale price:\n";
+                        cin >> price;
+                        while (price<=0){
+                            cout << "Enter the item's CORRECT wholesale price:\n";
+                            cin >> price;
                         }
-                        cout <<"\nWhat is the item's markup percentage?\n";
-                        cin >>mPrc;
-                        while (mPrc<=0){
-                            cout << "\nPlease enter the item's CORRECT markup percentage:\n";
-                            cin >> mPrc;
+                        cout <<"Item's markup percentage\n";
+                        cin >>per;
+                        while (per<=0){
+                            cout << "Enter the item's CORRECT markup percentage:\n";
+                            cin >> per;
                         }
-                        cout << "The items retail price is $" << calculateRetail(wPrc, mPrc)<< ".\n";
+                        cout << "The items retail price is $" << calculateRetail(price, per)<< ".\n";
                         cout << "\n\n\n\n";
                
                         break;
