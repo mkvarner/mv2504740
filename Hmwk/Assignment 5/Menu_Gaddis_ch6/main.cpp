@@ -29,7 +29,9 @@ float getSales(float, float, float, float);
 void findHighest(float, float, float, float);
 
 //Function 4
-
+void input2(int& hour, int& mins);
+void wait2(int& hour, int& mins);
+void output2(int& hour, int& mins);
 
 //Function 5
 float fallingDistance(float);
@@ -38,7 +40,10 @@ float fallingDistance(float);
 float kineticEnergy(float, float);
 
 //Function 7
-
+void input3(int& hour, int& mins);
+void wait3(int& hour, int& mins);
+void twelve3(int& hrs, int& mins, char& ampm);
+void output3(int& hour, int& mins, char& ampm);
 
 //Function 8
 float presentValue(float, float, float );
@@ -64,10 +69,10 @@ int main(int argc, char** argv) {
         cout<<"Type 1 for Problem 1 from Gaddis"<<endl;
         cout<<"Type 2 for Problem 1 from Savitch"<<endl;
         cout<<"Type 3 for Problem 3 from Gaddis"<<endl;
-        cout<<"Type 4 for Problem 4 from Gaddis"<<endl;
+        cout<<"Type 4 for Problem 2 from Savitch"<<endl;
         cout<<"Type 5 for Problem 5 from Gaddis"<<endl;
         cout<<"Type 6 for Problem 6 from Gaddis"<<endl;
-        cout<<"Type 7 for Problem 7 from Gaddis"<<endl;
+        cout<<"Type 7 for Problem 3 from Savitch"<<endl;
         cout<<"Type 8 for Problem 9 from Gaddis"<<endl;
         cout<<"Type 9 for Problem 14 from Gaddis"<<endl;
         cout<<"Type 10 for Problem 19 from Gaddis"<<endl;
@@ -77,7 +82,7 @@ int main(int argc, char** argv) {
         
         switch(choice){
             
-            //problem 1
+            //problem 1 Gaddis
             case 1:{   
                 
                         int price, per;
@@ -98,12 +103,11 @@ int main(int argc, char** argv) {
                         break;
             }
             
-            //problem 2
+            //problem 1 Savitch 
             case 2:{  
                 int hour, mins;
             char ampm, ans;
             do{
-            
             input1(hour, mins);
             convrt1(hour, mins, ampm);
             out1(hour, mins, ampm);
@@ -111,7 +115,6 @@ int main(int argc, char** argv) {
             cout<<"Convert your 24-hour notation time again...\n";
             cout<<"Enter y for yes, n for no: ";
             cin>>ans;
-            cout<<"\n";
             }while (ans=='y'||ans=='Y');
                   
                 break;
@@ -156,9 +159,21 @@ int main(int argc, char** argv) {
                 break;
             }
             
-            //problem 4
-        case 4:{       
-        
+            //problem 2 Savitch
+        case 4:{ 
+             int hour, mins;
+            char ans;
+            //loop
+            do{   
+            input2(hour, mins);
+            wait2(hour, mins);
+            output2(hour, mins);
+            cout<<"\n";
+            cout<<"Recalculate wait time:\n";
+            cout<<"Enter y for yes, n for no: ";
+            cin>>ans;
+            }while(ans=='y'||ans=='Y');
+            
                 break;
             }
         
@@ -191,18 +206,36 @@ float mass;
                 cin>>mass>>velocity;
                 cout<<endl;
                  
-              
+                         while (mass<0 || velocity<0){
+   cout << "Enter the mass and velocity of an object with a space in between\n";
+                            cin >> mass>>velocity;
+                        }
+                         
                 jo = kineticEnergy(mass, velocity);
                 
+        
                 //Output 
                 cout<<"The kinetic energy of the object is: "<<jo<<" J\n";
            
                 break;
             }
             
-            //problem 7
+            //problem 3 Savitch
             case 7:{
-                  
+                   int hour, mins;
+            char ans, ampm;
+            do{
+            //Function Call    
+            input3(hour, mins);
+            wait3(hour, mins);
+            twelve3(hour, mins, ampm);
+            output3(hour, mins, ampm);
+            cout<<"\n";
+            cout<<"Recalculate wait:\n";
+            cout<<"Enter y for yes, n for no: ";
+            cin>>ans;
+            cout<<"\n";
+            }while(ans=='y'||ans=='Y');
                 break;
             }
             
@@ -371,7 +404,31 @@ void findHighest(float a, float b, float c, float d){
 }
 
 //Function Definitions 4
-
+void input2(int& hour, int& mins){
+    cout<<"Enter hour in 24-hour format:"<<endl;
+    cout<<"Hour: ";
+    cin>>hour;
+    cout<<"Wait time in minutes:";
+    cout<<"\n";
+    cout<<"Wait Time: ";
+    cin>>mins;
+    cout<<endl;
+}
+void wait2(int& hour, int& mins){
+    if (mins>59){
+        hour=hour+(mins/60);
+        mins=(mins%60);
+    }if (mins<59){
+        mins=mins;
+    }if(hour>23){
+        hour=hour-24;
+    }    
+}
+void output2(int& hour, int& mins){
+    cout<<"The time will be ";
+    cout<<setw(2)<<setfill('0')<<hour<<":"<<setw(2)<<setfill('0')<<mins;
+    cout<<" hours after your wait.\n";
+}
 
 //Function Definitions 5
 float fallingDistance(float secs){
@@ -384,7 +441,50 @@ float kineticEnergy(float m, float v){
 }
 
 //Function Definitions 7
+void input3(int& hour, int& mins){
+    cout<<"Enter hour in 24-hour format:"<<endl;
+    cout<<"Hour: ";
+    cin>>hour;
+    cout<<"Wait time in minutes:";
+    cout<<"\n";
+    cout<<"Wait Time: ";
+    cin>>mins;
+    cout<<endl;
+}
+void wait3(int& hour, int& mins){
+    if (mins>59){
+        hour=hour+(mins/60);
+        mins=(mins%60);
+    }if (mins<59){
+        mins=mins;
+    }if(hour>23){
+        hour=hour-24;
+    } 
+}
 
+void twelve3(int& hour, int& mins, char& ampm){
+    
+    if (hour>12&&hour<=23){
+        hour=hour-12;
+        ampm='P';
+    }else if (hour==12){
+        ampm='P';
+    }else if(hour==0){
+        hour=12;
+        ampm='A';
+    }else if (hour<12&&hour>=00){
+        ampm='A';
+    }else if(hour>=24||mins>59){
+        cout<<"\n";
+        cout<<"Invalid Input";
+    }
+}
+
+void output3(int& hour, int& mins, char& ampm){
+    cout<<"The time will be ";
+    cout<<setw(2)<<setfill('0')<<hour<<":"<<setw(2)<<setfill('0')<<mins;
+    cout<<" "<<ampm<<"M after your wait.\n";
+}
 
 //Function Definitions 8
 float presentValue(float a, float b, float c ){
