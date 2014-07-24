@@ -19,38 +19,36 @@ using namespace std;
 //Function 1
 float calculateRetail(float, float);
 
-//Function 3
-void getScore(int& score);
-int findLowest(int s1, int s2, int s3, int s4, int s5);
-void calcAverage(int s1, int s2, int s3, int s4, int s5);
+//Function 2
+void input1(int& hour, int& mins);//24 hr
+void convrt1(int& hour, int& mins, char& ampm);//12 hr
+void out1(int& hour, int& mins, char& ampm);//12 hr
 
-//Function 4
+//Function 3
 float getSales(float, float, float, float);
 void findHighest(float, float, float, float);
 
+//Function 4
+
+
 //Function 5
-
-
-//Function 6
 float fallingDistance(float);
 
-//Function 7
+//Function 6
 float kineticEnergy(float, float);
 
-//Function 8
-void getScore(int& score);
-int findLowest(int s1, int s2, int s3, int s4, int s5);
-void calcAverage(int s1, int s2, int s3, int s4, int s5);
+//Function 7
 
-//Function 10
+
+//Function 8
 float presentValue(float, float, float );
 
 
-//Function 14
+//Function 9
 int totalCharge(int, int, int, int);
 float totalCharge(float, float);
 
-//Function 19
+//Function 10
 float profit(float, float, float, float, float );
 
 
@@ -64,13 +62,13 @@ int main(int argc, char** argv) {
       
         cout<<"Choose from the menu"<<endl;
         cout<<"Type 1 for Problem 1 from Gaddis"<<endl;
-        cout<<"Type 2 for Problem 3 from Gaddis"<<endl;
-        cout<<"Type 3 for Problem 4 from Gaddis"<<endl;
-        cout<<"Type 4 for Problem 5 from Gaddis"<<endl;
-        cout<<"Type 5 for Problem 6 from Gaddis"<<endl;
-        cout<<"Type 6 for Problem 7 from Gaddis"<<endl;
-        cout<<"Type 7 for Problem 9 from Gaddis"<<endl;
-        cout<<"Type 8 for Problem 10 from Gaddis"<<endl;
+        cout<<"Type 2 for Problem 1 from Savitch"<<endl;
+        cout<<"Type 3 for Problem 3 from Gaddis"<<endl;
+        cout<<"Type 4 for Problem 4 from Gaddis"<<endl;
+        cout<<"Type 5 for Problem 5 from Gaddis"<<endl;
+        cout<<"Type 6 for Problem 6 from Gaddis"<<endl;
+        cout<<"Type 7 for Problem 7 from Gaddis"<<endl;
+        cout<<"Type 8 for Problem 9 from Gaddis"<<endl;
         cout<<"Type 9 for Problem 14 from Gaddis"<<endl;
         cout<<"Type 10 for Problem 19 from Gaddis"<<endl;
         cout<<"Anything Else Exit"<<endl;
@@ -100,9 +98,27 @@ int main(int argc, char** argv) {
                         break;
             }
             
+            //problem 2
+            case 2:{  
+                int hour, mins;
+            char ampm, ans;
+            do{
+            
+            input1(hour, mins);
+            convrt1(hour, mins, ampm);
+            out1(hour, mins, ampm);
+            cout<<"\n";
+            cout<<"Convert your 24-hour notation time again...\n";
+            cout<<"Enter y for yes, n for no: ";
+            cin>>ans;
+            cout<<"\n";
+            }while (ans=='y'||ans=='Y');
+                  
+                break;
+            }
             
             //problem 3
-            case 2:{
+            case 3:{
                 
                     float ne,se, nw, sw; 
                        
@@ -141,13 +157,13 @@ int main(int argc, char** argv) {
             }
             
             //problem 4
-        case 3:{       
+        case 4:{       
         
                 break;
             }
         
         //problem 5
-            case 4:{ 
+            case 5:{ 
                   float intrvl;
                   
          cout << "Enter a number of seconds:\n";
@@ -163,7 +179,7 @@ int main(int argc, char** argv) {
             }
             
             //problem 6
-            case 5:{
+            case 6:{
                 
 float mass;
                 float velocity;
@@ -185,14 +201,13 @@ float mass;
             }
             
             //problem 7
-            case 6:{
+            case 7:{
                   
                 break;
             }
             
-            
             //problem 9
-            case 7:{
+            case 8:{
                 
           float ftrVal, annInt, numYears;
                      
@@ -209,13 +224,6 @@ float mass;
               cout << " into your savings account.\n ";
                       
                         
-                break;
-            }
-                 //problem 10
-            case 8:{  
-              
-                
-                      
                 break;
             }
             
@@ -300,7 +308,41 @@ float calculateRetail(float a, float  b){
 
 }
 //Function Definitions 2
-
+void input1(int& hour, int& mins){
+    cout<<"Enter your 24 hour format time:"<<endl;
+    cout<<"Hour: ";
+    cin>>hour;
+    cout<<"Minute: ";
+    cin>>mins;
+    cout<<endl;
+    cout<<"24-hour format time is: ";
+    cout<<setw(2)<<setfill('0')<<hour<<":"<<setw(2)<<setfill('0')<<mins<<endl;
+}
+void convrt1(int& hour, int& mins, char& ampm){  
+    
+    if (hour>12&&hour<=23){
+        hour=hour-12;
+        ampm='P';
+    }else if (hour==12){
+        ampm='P';
+        hour=12;
+        ampm='A';
+    }else if(hour==0){
+    }else if (hour<12&&hour>=00){
+        ampm='A';
+    }else if(hour>=24||mins>59){
+        cout<<"\n";
+        cout<<"Invalid Input";
+    }
+    
+}     
+void out1(int& hour, int& mins, char& ampm){
+    cout<<endl;
+    if(hour<=12&&mins<=59){
+    cout<<"The 12-hour format is: ";
+    cout<<hour<<":"<<setw(2)<<setfill('0')<<mins<<" "<<ampm<<"M"<<endl; 
+    }
+}
 
 //Function Definitions 3
 float getSales(float a, float b, float c, float d ){
