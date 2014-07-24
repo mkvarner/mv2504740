@@ -156,10 +156,22 @@ int main(int argc, char** argv) {
             }
             case 6:{
                 
-
-
-
-    
+float mass;
+                float velocity;
+                
+                float jo;//KE in J
+         
+   cout<<"Enter the mass and velocity of an object with a space in between\n";
+        
+                cin>>mass>>velocity;
+                cout<<endl;
+                 
+              
+                jo = kineticEnergy(mass, velocity);
+                
+                //Output 
+                cout<<"The kinetic energy of the object is: "<<jo<<" J\n";
+           
                 break;
             }
             case 7:{
@@ -302,8 +314,8 @@ float fallingDistance(float secs){
 }
 
 //Function Definitions 6
-float kineticEnergy(float x, float y){
-    return .5 * x * y * y;
+float kineticEnergy(float m, float v){
+    return (0.5)*m*v*v;
 }
 
 //Function Definitions 7
