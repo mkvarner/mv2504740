@@ -5,13 +5,13 @@
  */
 
 //System Libraries
-//Take out if not needed
-#include <cstdlib>//Random function srand
-#include <iostream>//Standard input/output
-#include <fstream>//File input/output
-#include <ctime>//Time for random and program
-#include <iomanip>//Formatting
-#include <cmath>//Math functions
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <ctime>
+#include <iomanip>
+#include <cmath>
+
 using namespace std;
 
 //Global Constants
@@ -127,7 +127,7 @@ int main(int argc, char** argv) {
                      cout << "Please type in a correct dollar amount.\n";
                                 cin >> sw;
                             }
-     findHighest(ne,se, nw, sw); // this function will return the highest value
+     findHighest(ne,se, nw, sw); // highest value
                             cout << "\nThey made $"; 
                             cout << getSales(ne,se, nw, sw);// function
                             cout << " in sales.\n";
@@ -215,24 +215,24 @@ int main(int argc, char** argv) {
                                cin >> medCsts;
 cout << "Total charge for patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
                             }   
-                            //Exit function main
+                            
                                                     cout << "\n\n\n\n";   
                                         break;
             }
              case 10:{
              
                 float numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn;
-                            int check;
-                            cout << "Enter the number of shares:\n";
-                            cin >> numShrs;
-                            cout << "Enter the sale price per share:\n";
-                            cin >> salPrice;
-                            cout << "Enter the sale commission paid:\n";
-                            cin >> salCmmsn;
-                            cout << "Enter the purchase price per share:\n";
-                            cin >> prchPrc;
-                            cout << "Enter the purchase commission paid:\n";
-                            cin >> prchCmmsn;
+         int check;
+       cout << "Enter the number of shares:\n";
+     cin >> numShrs;
+     cout << "Enter the sale price per share:\n";
+     cin >> salPrice;
+     cout << "Enter the sale commission paid:\n";
+     cin >> salCmmsn;
+     cout << "Enter the purchase price per share:\n";
+     cin >> prchPrc;
+     cout << "Enter the purchase commission paid:\n";
+     cin >> prchCmmsn;
      check = profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn);
                             if ((check)>0)
 cout << "\nYour total profit is $";
