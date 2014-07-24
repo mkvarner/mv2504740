@@ -112,25 +112,25 @@ int main(int argc, char** argv) {
                     cout << "Northeast divisions sales this quarter:\n"; 
                             cin >> ne;
                      while (ne <=0){ // dollar less than 0
-                          cout << "Please type in a correct dollar amount.\n";
+                          cout << "Northeast divisions sales this quarter:\n";
                                 cin >> ne;
                             }
                  cout << "Southeast divisions sales this quarter:\n"; 
                             cin >> se;
                             while (se <=0){// less than or equal to 0.
-                        cout << "Please type in a correct dollar amount.\n";
+                        cout << "Southeast divisions sales this quarter:\n";
                                 cin >> se;
                             }
                     cout << "Northwest divisions sales this quarter:\n"; 
                             cin >> nw;
                             while (nw <=0){// less than or equal to 0.
-                       cout << "Please type in a correct dollar amount.\n";
+                       cout << "Northwest divisions sales this quarter:\n";
                                 cin >> nw;
                             }
                        cout << "Southwest division sales this quarter:\n"; 
                             cin >> sw;
                             while (sw <=0){// less than or equal to 0.
-                     cout << "Please type in a correct dollar amount.\n";
+                     cout << "Southwest division sales this quarter:\n";
                                 cin >> sw;
                             }
      findHighest(ne,se, nw, sw); // highest value
