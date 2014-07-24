@@ -220,11 +220,11 @@ float mass;
                             choice = toupper(choice);
 
   cout << "Was the patient admitted as an in-patient or an out-patient?\n";
-          cout<< "Type \"A\" if patient was admitted as an in-patient.\n";
-        cout <<"Type \"B\" if the patient was admitted as an out-patient.\n";
+          cout<< "Type \"I\" if patient was admitted as an in-patient.\n";
+        cout <<"Type \"O\" if the patient was admitted as an out-patient.\n";
                             cin >> choice;
                             int dys, rate, srvCsts, medCsts;
-                            if ((choice == 'A')|| (choice== 'a')){
+                            if ((choice == 'I')|| (choice== 'i')){
            cout << "For how many days:\n";
                                 cin >> dys;
          cout << "Cost to stay for one day:\n";
@@ -237,7 +237,7 @@ float mass;
             cout<< totalCharge(dys, rate, srvCsts, medCsts) << ".\n";
                             }
 
-                            if ((choice == 'B')|| (choice == 'b')){
+                            if ((choice == 'O')|| (choice == 'o')){
          cout << "Hospital charge for its services:\n";
                                cin >> srvCsts;
                                cout << "Cost for customer for medications:\n";
@@ -266,11 +266,11 @@ cout << "Total charge for patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
      cin >> prchCmmsn;
      check = profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn);
                             if ((check)>0)
-cout << "\nYour total profit is $";
-     cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn)<< "."<< endl;
+cout << "Your total profit is";
+     cout<<"$"<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn)<< endl;
                             if ((check)<=0)
-cout << "\nYou did not make a profit. You lost \n";
-cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars.\n"; 
+cout << "No profit. You lost \n";
+cout<<"$"<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) <<endl; 
 
                            
 
@@ -284,7 +284,7 @@ cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars.\n";
         }
     }while(choice>=1&&choice<=10);
 
-    //Exit the program
+    
     return 0;
 }
 
