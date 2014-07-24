@@ -19,34 +19,38 @@ using namespace std;
 //Function 1
 float calculateRetail(float, float);
 
-//Function 2
-
-
 //Function 3
+void getScore(int& score);
+int findLowest(int s1, int s2, int s3, int s4, int s5);
+void calcAverage(int s1, int s2, int s3, int s4, int s5);
+
+//Function 4
 float getSales(float, float, float, float);
 void findHighest(float, float, float, float);
 
-//Function 4
-
-
 //Function 5
-float fallingDistance(float);
+
 
 //Function 6
-float kineticEnergy(float, float);
+float fallingDistance(float);
 
 //Function 7
-
+float kineticEnergy(float, float);
 
 //Function 8
+void getScore(int& score);
+int findLowest(int s1, int s2, int s3, int s4, int s5);
+void calcAverage(int s1, int s2, int s3, int s4, int s5);
+
+//Function 10
 float presentValue(float, float, float );
 
 
-//Function 9
+//Function 14
 int totalCharge(int, int, int, int);
 float totalCharge(float, float);
 
-//Function 10
+//Function 19
 float profit(float, float, float, float, float );
 
 
@@ -60,13 +64,13 @@ int main(int argc, char** argv) {
       
         cout<<"Choose from the menu"<<endl;
         cout<<"Type 1 for Problem 1 from Gaddis"<<endl;
-        cout<<"Type 2 for Problem 2 from Gaddis"<<endl;
-        cout<<"Type 3 for Problem 3 from Gaddis"<<endl;
-        cout<<"Type 4 for Problem 4 from Gaddis"<<endl;
-        cout<<"Type 5 for Problem 5 from Gaddis"<<endl;
-        cout<<"Type 6 for Problem 6 from Gaddis"<<endl;
-        cout<<"Type 7 for Problem 7 from Gaddis"<<endl;
-        cout<<"Type 8 for Problem 9 from Gaddis"<<endl;
+        cout<<"Type 2 for Problem 3 from Gaddis"<<endl;
+        cout<<"Type 3 for Problem 4 from Gaddis"<<endl;
+        cout<<"Type 4 for Problem 5 from Gaddis"<<endl;
+        cout<<"Type 5 for Problem 6 from Gaddis"<<endl;
+        cout<<"Type 6 for Problem 7 from Gaddis"<<endl;
+        cout<<"Type 7 for Problem 9 from Gaddis"<<endl;
+        cout<<"Type 8 for Problem 10 from Gaddis"<<endl;
         cout<<"Type 9 for Problem 14 from Gaddis"<<endl;
         cout<<"Type 10 for Problem 19 from Gaddis"<<endl;
         cout<<"Anything Else Exit"<<endl;
@@ -96,15 +100,9 @@ int main(int argc, char** argv) {
                         break;
             }
             
-            //problem 2
-            case 2:{  
-                                        
-                      
-                break;
-            }
             
             //problem 3
-            case 3:{
+            case 2:{
                 
                     float ne,se, nw, sw; 
                        
@@ -143,13 +141,13 @@ int main(int argc, char** argv) {
             }
             
             //problem 4
-        case 4:{       
+        case 3:{       
         
                 break;
             }
         
         //problem 5
-            case 5:{ 
+            case 4:{ 
                   float intrvl;
                   
          cout << "Enter a number of seconds:\n";
@@ -165,7 +163,7 @@ int main(int argc, char** argv) {
             }
             
             //problem 6
-            case 6:{
+            case 5:{
                 
 float mass;
                 float velocity;
@@ -187,13 +185,14 @@ float mass;
             }
             
             //problem 7
-            case 7:{
+            case 6:{
                   
                 break;
             }
             
+            
             //problem 9
-            case 8:{
+            case 7:{
                 
           float ftrVal, annInt, numYears;
                      
@@ -210,6 +209,13 @@ float mass;
               cout << " into your savings account.\n ";
                       
                         
+                break;
+            }
+                 //problem 10
+            case 8:{  
+              
+                
+                      
                 break;
             }
             
