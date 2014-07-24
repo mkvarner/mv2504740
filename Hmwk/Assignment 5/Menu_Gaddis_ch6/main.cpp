@@ -15,50 +15,49 @@
 using namespace std;
 
 //Global Constants
-//If not a Global Constant get an F
 
-//Function Prototypes For Case 1
+//Function 1
 float calculateRetail(float, float);
 
-//Function Prototypes For Case 2
-void round();
+//Function 2
 
-//Function Prototypes For Case 3
-bool even ( int );
 
-//Function Prototypes For Case 4
-float calcChrgs(float);
-float calcChrgs2(float);
-float calcChrgs3(float);
-
-//Function Prototypes For Case 5
-float profit(float, float, float, float, float );
-
-//Function Prototypes For Case 6
-float fallingDistance(float);
-
-//Function Prototypes For Case 7
-float kineticEnergy(float, float);
-
-//Function Prototypes For Case 8
+//Function 3
 float getSales(float, float, float, float);
 void findHighest(float, float, float, float);
 
-//Function Prototypes For Case 9
+//Function 4
+
+
+//Function 5
+float fallingDistance(float);
+
+//Function 6
+float kineticEnergy(float, float);
+
+//Function 7
+
+
+//Function 8
 float presentValue(float, float, float );
 
-//Function Prototypes For Case 10
+
+//Function 9
 int totalCharge(int, int, int, int);
 float totalCharge(float, float);
 
-//Execution Begins Here!!!
+//Function 10
+float profit(float, float, float, float, float );
+
+
+//Execution 
 int main(int argc, char** argv) {
-    //Declare menu variables
+
     int choice;
     
     //Loop until exit
     do{
-        //Output Menu
+      
         cout<<"Choose from the menu"<<endl;
         cout<<"Type 1 for Problem 1 from Gaddis"<<endl;
         cout<<"Type 2 for Problem 2 from Gaddis"<<endl;
@@ -258,71 +257,17 @@ cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars.\n";
     return 0;
 }
 
-//Function Definitions For Case 1
+//Function Definitions 1
 float calculateRetail(float a, float  b){
     float  rPrc;
     rPrc = a*(b/100)+a;
     return rPrc;
 
 }
-//Function Definitions For Case 2
-void round (void){
-    float num =0, i;
-    while (num != -1){
-        cout << "\nEnter a number(Enter -1 to END):";
-        cin >> num;
-        i = floor(num+.5);
-        
-        cout << num << " rounded is: " << i << endl;;
-        
-    }
-   
-}
-//Function Definitions For Case 3
-bool even (int i){
-    return !(i%2);
-}
-//Function Definitions For Case 4
-float calcChrgs(float a){
-    if (a <=3) //Checks if car parked less than 3 hours
-        return 2.00; //returns a value to the caller function
-    if (a >3 && a<=16) //checks to see if  car has reached the limit of 10 hrs
-    return 2.00+ (a-3)*.50;//returns a value to the caller function
-    if (a>16)// checks for anything above the limit
-        return 10.00;//returns a value to the caller function
-} float calcChrgs2(float b){
-    if (b <=3)//Checks if car parked less than 3 hours
-        return 2.00;//returns a value to the caller function
-    if (b >3 && b<=16)//checks to see if  car has reached the limit of 10 hrs
-    return 2.00+ (b-3)*.50;//returns a value to the caller function
-    if (b>16)//checks for anything above the limit
-        return 10.00;//returns a value to the caller function
-    }
-float calcChrgs3(float c){
-    if (c <=3)
-        return 2.00;//returns a value to the caller function
-    if (c >3 && c<=16)
-    return 2.00+ (c-3)*.50;//returns a value to the caller function
-    if (c>16)
-        return 10.00;//returns a value to the caller function
-}
-//Function Definitions For Case 5
-float profit(float a, float b, float c, float d, float e){
-    float profit;
-    profit = ( (a*b) -c ) - ( (a*d) + e );
-            return profit;
-}
-//Function Definitions For Case 6
-float fallingDistance(float secs){
-    return (secs)*(secs)*(.5)*(9.8);
-}
+//Function Definitions 2
 
-//Function Definitions For Case 7
-float kineticEnergy(float x, float y){
-    return .5 * x * y * y;
-}
 
-//Function Definitions For Case 8
+//Function Definitions 3
 float getSales(float a, float b, float c, float d ){
     int maxSales;
     maxSales = a;
@@ -348,7 +293,23 @@ void findHighest(float a, float b, float c, float d){
 
 }
 
-//Function Definitions For Case 9
+//Function Definitions 4
+
+
+//Function Definitions 5
+float fallingDistance(float secs){
+    return (secs)*(secs)*(.5)*(9.8);
+}
+
+//Function Definitions 6
+float kineticEnergy(float x, float y){
+    return .5 * x * y * y;
+}
+
+//Function Definitions 7
+
+
+//Function Definitions 8
 float presentValue(float a, float b, float c ){
 
     int prsntVal;
@@ -358,7 +319,9 @@ float presentValue(float a, float b, float c ){
     
     return prsntVal; 
 }
-//Function Definitions For Case 10
+
+
+//Function Definitions 9
 int totalCharge(int a, int b, int c, int d){
    int  totChrg;
     totChrg = a*(b+c+d);
@@ -368,4 +331,11 @@ float totalCharge(float x, float y){
     float totChrg;
     totChrg = x+y; 
     return totChrg;
+}
+
+//Function Definitions 10
+float profit(float a, float b, float c, float d, float e){
+    float profit;
+    profit = ( (a*b) -c ) - ( (a*d) + e );
+            return profit;
 }
