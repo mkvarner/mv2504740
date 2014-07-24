@@ -133,7 +133,7 @@ int main(int argc, char** argv) {
                                 cin >> sw;
                             }
      findHighest(ne,se, nw, sw); // highest value
-                            cout << "\nThey made $"; 
+                            cout << "They made $"; 
                             cout << getSales(ne,se, nw, sw);// function
                             cout << " in sales.\n";
                                                   
@@ -195,20 +195,19 @@ float mass;
             //problem 9
             case 8:{
                 
-                       float ftrVal, annInt, numYears;
+          float ftrVal, annInt, numYears;
                      
-                 cout << "Annual interest rate on your savings account(%):\n";
-                            cin >> annInt;
-                            annInt= annInt/100;
-                            cout << "Amount of money would you like to see in your savings account:\n";
-                            cin >> ftrVal;
-             cout << "For how many years will you keep the $" << ftrVal<<endl;
-                                  cout<<" in your savings account?\n";
-                            cin >> numYears;
+  cout << "Annual interest rate in percent of your savings:\n";
+            cin >> annInt;
+            annInt= annInt/100;
+ cout << "Amount of money would you like to have:\n";
+             cin >> ftrVal;
+ cout << "Years money will be kept in the account:\n";
+   cin >> numYears;
 
-                            cout << "You will have to deposit $";
-                            cout <<  presentValue(ftrVal, annInt, numYears); 
-                            cout << " into your savings account.\n ";
+               cout << "You will have to deposit $";
+              cout <<  presentValue(ftrVal, annInt, numYears); 
+              cout << " into your savings account.\n ";
                       
                         
                 break;
@@ -216,10 +215,9 @@ float mass;
             
             //problem 14
             case 9:{
-                                                char choice, a, b, A, B;
-                            choice = toupper(choice);
+               char choice, a, b, A, B;
+               choice = toupper(choice);
 
-  cout << "Was the patient admitted as an in-patient or an out-patient?\n";
           cout<< "Type \"I\" if patient was admitted as an in-patient.\n";
         cout <<"Type \"O\" if the patient was admitted as an out-patient.\n";
                             cin >> choice;
