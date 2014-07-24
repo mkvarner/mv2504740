@@ -92,8 +92,7 @@ int main(int argc, char** argv) {
                             cin >> per;
                         }
   cout << "The items retail price is $" << calculateRetail(price, per)<<endl;
-                        cout << "\n\n\n\n";
-               
+                        
                         break;
             }
             
@@ -137,7 +136,7 @@ int main(int argc, char** argv) {
                             cout << "\nThey made $"; 
                             cout << getSales(ne,se, nw, sw);// function
                             cout << " in sales.\n";
-                                                    cout <<"\n\n\n\n";
+                                                  
 
 
                 break;
@@ -154,14 +153,14 @@ int main(int argc, char** argv) {
                   float intrvl;
                   
          cout << "Enter a number of seconds:\n";
-                            cin >> intrvl; // takes in the time
-        cout<<"If an object was to fall with respect to earths gravity for\n";
+                            cin >> intrvl; // time
+        cout<<"If an object were to fall\n";
         cout<< intrvl<< " seconds, it would cover a distance of\n";
         cout<< fallingDistance(intrvl) << "m\n";
                   cout << "\n";
                      for (int i=1; i<=10; ++i)
-       cout << i << " seconds of fall = " << fallingDistance(i)<< " meters.\n";
-           cout <<"\n\n\n\n";
+       cout << i << " seconds of fall = " << fallingDistance(i)<< " m\n";
+        
                 break;
             }
             
@@ -210,7 +209,7 @@ float mass;
                             cout << "You will have to deposit $";
                             cout <<  presentValue(ftrVal, annInt, numYears); 
                             cout << " into your savings account.\n ";
-                          cout <<"\n\n\n\n";
+                      
                         
                 break;
             }
@@ -246,7 +245,7 @@ float mass;
 cout << "Total charge for patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
                             }   
                             
-                                                    cout << "\n\n\n\n";   
+                                               
                                         break;
             }
             
@@ -273,7 +272,7 @@ cout << "\nYour total profit is $";
 cout << "\nYou did not make a profit. You lost \n";
 cout<< profit(numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn) << " dollars.\n"; 
 
-                            cout << "\n\n\n\n";
+                           
 
 
                        
