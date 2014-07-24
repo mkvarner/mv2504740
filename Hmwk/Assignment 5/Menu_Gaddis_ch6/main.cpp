@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
 
     int choice;
     
-    //Loop until exit
+    //Loops menu
     do{
       
         cout<<"Choose from the menu"<<endl;
@@ -70,10 +70,12 @@ int main(int argc, char** argv) {
         cout<<"Type 9 for Problem 14 from Gaddis"<<endl;
         cout<<"Type 10 for Problem 19 from Gaddis"<<endl;
         cout<<"Anything Else Exit"<<endl;
-        //Input your choice
+        
         cin>>choice;
-        //Solve the problem chosen
+        
         switch(choice){
+            
+            //problem 1
             case 1:{   
                 
                         int price, per;
@@ -94,11 +96,15 @@ int main(int argc, char** argv) {
                
                         break;
             }
+            
+            //problem 2
             case 2:{  
                                         
                       
                 break;
             }
+            
+            //problem 3
             case 3:{
                 
                     float ne,se, nw, sw; 
@@ -136,10 +142,14 @@ int main(int argc, char** argv) {
 
                 break;
             }
+            
+            //problem 4
         case 4:{       
         
                 break;
             }
+        
+        //problem 5
             case 5:{ 
                   float intrvl;
                   
@@ -154,6 +164,8 @@ int main(int argc, char** argv) {
            cout <<"\n\n\n\n";
                 break;
             }
+            
+            //problem 6
             case 6:{
                 
 float mass;
@@ -174,10 +186,14 @@ float mass;
            
                 break;
             }
+            
+            //problem 7
             case 7:{
                   
                 break;
             }
+            
+            //problem 9
             case 8:{
                 
                        float ftrVal, annInt, numYears;
@@ -198,6 +214,8 @@ float mass;
                         
                 break;
             }
+            
+            //problem 14
             case 9:{
                                                 char choice, a, b, A, B;
                             choice = toupper(choice);
@@ -231,6 +249,8 @@ cout << "Total charge for patient is $"<< totalCharge(srvCsts, medCsts)<< ".\n";
                                                     cout << "\n\n\n\n";   
                                         break;
             }
+            
+            //problem 19
              case 10:{
              
                 float numShrs,salPrice, salCmmsn, prchPrc, prchCmmsn;
