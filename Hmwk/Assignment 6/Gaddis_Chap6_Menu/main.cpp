@@ -14,6 +14,14 @@ using namespace std;
 
 //Function Prototypes
 
+//Problem 1 functions
+bool isHexDgt(char);
+void getHex(char[],const int);
+short chrInt(char,const short,const short);
+void addHexDgt(char,char,char&,bool&);
+void addHex(char[],char[],const int,char[],bool&);
+
+
 //Execution Starts Here!
 int main(int argc, char** argv) {
     
@@ -23,7 +31,7 @@ int main(int argc, char** argv) {
     //Loop until choice is not in the menu selection
     do{
         //Output the menu and input the choice
-        cout<<"Type 1 for Problem X from Gaddis"<<endl;
+        cout<<"Type 1 for Problem 2 from Savitch"<<endl;
         cout<<"Type 2 for Problem X from Gaddis"<<endl;
         cout<<"Type 3 for Problem X from Gaddis"<<endl;
         cout<<"Type 4 for Problem B from Gaddis"<<endl;
@@ -39,15 +47,18 @@ int main(int argc, char** argv) {
         cout<<endl;
         switch(choice){
             case  '1':{
-                cout<<"Problem X here!"<<endl<<endl;
+               
+     
+                       
+              
                 break;
-            }case '2':{
+            }case 2:{
                 cout<<"Problem Y here!"<<endl<<endl;
                 break;
-            }case '3':{
+            }case 3:{
               
                 break;         
-            }case '4':{
+            }case 4:{
                 cout<<"Problem B here!"<<endl<<endl;
                 break;
             }default:{
@@ -59,3 +70,6 @@ int main(int argc, char** argv) {
     //Exit stage right!
     return 0;
 }
+        
+        
+ 
