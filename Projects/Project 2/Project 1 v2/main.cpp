@@ -24,6 +24,7 @@ int main(int argc, char** argv)
     //Loop until choice is not in the menu selection
     do{
         //Start
+        cout<<"\n";
         cout<<"Welcome to my arcade!\n";
         cout<<"Lets PLAY!\n";
         cout<<"\n";
@@ -32,7 +33,7 @@ int main(int argc, char** argv)
         cout<<"Type 1 to play...guess the number I'm thinking of"<<endl;
         cout<<"Type 2 to play...Add with me"<<endl;
         cout<<"Type 3 to play...Subtract with me"<<endl;
-        cout<<"Type 4 to play...Count, Count, Count"<<endl;
+        cout<<"Type 4 to play...Start Multiplying"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
