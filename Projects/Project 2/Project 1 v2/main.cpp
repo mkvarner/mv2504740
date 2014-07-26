@@ -254,12 +254,14 @@ const int rows = 6;
 const int cols = 6;
 int div[rows ][cols ] = { 0 };
  
-// Calculate a multiplication table
+// Create table
 for (int nRow = 0; nRow < rows; nRow++)
     for (int nCol = 0; nCol < cols; nCol++)
+        
+        //Division calculation
         div[nRow][nCol] = nRow / nCol;
  
-// Print the table
+// output the table
 for (int nRow = 1; nRow < rows; nRow++)
 {
     for (int nCol = 1; nCol < cols; nCol++)
