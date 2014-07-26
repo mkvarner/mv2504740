@@ -32,6 +32,7 @@ int main(int argc, char** argv)
         cout<<"Type 1 to play...guess the number I'm thinking of"<<endl;
         cout<<"Type 2 to play...Add with me"<<endl;
         cout<<"Type 3 to play...Subtract with me"<<endl;
+        cout<<"Type 4 to play...Count, Count, Count"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -212,8 +213,35 @@ while(play_again == true)
                 
                  break;
             }
+            
+            //Game 4
+            case  '4':{
+                
+//2-dimensional array
+int anArray[5][4][3];
+
+// 6x6 array
+const int rows = 6;
+const int cols = 6;
+int nProduct[rows ][cols ] = { 0 };
+ 
+// Calculate a multiplication table
+for (int nRow = 0; nRow < rows; nRow++)
+    for (int nCol = 0; nCol < cols; nCol++)
+        nProduct[nRow][nCol] = nRow * nCol;
+ 
+// Print the table
+for (int nRow = 1; nRow < rows; nRow++)
+{
+    for (int nCol = 1; nCol < cols; nCol++)
+        cout << nProduct[nRow][nCol] << "\t";
+ 
+    cout << "\n";
+}
+break;
+        }
           
-            //exit menu when 1,2, or 3, are not entered
+            //exit menu when 1-6 are not entered
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
             }
@@ -221,7 +249,7 @@ while(play_again == true)
        
         
         
-    }while(choice >= '1' && choice <='3'); //ends loop i.e. arcade
+    }while(choice >= '1' && choice <='6'); //ends loop i.e. arcade
 
     //Exit stage right!
     return 0;
