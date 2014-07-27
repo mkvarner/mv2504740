@@ -11,6 +11,9 @@
 #include<iomanip>
 #include<cmath>
 
+//Function problem 6
+float calculate(float, float);
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -35,6 +38,7 @@ int main(int argc, char** argv)
         cout<<"Type 3 to play...Subtract with me"<<endl;
         cout<<"Type 4 to play...Start Multiplying"<<endl;
         cout<<"Type 5 to play...Start Dividing"<<endl;
+        cout<<"Type 6 to play...Calculate Percents"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -271,6 +275,44 @@ for (int nRow = 1; nRow < rows; nRow++)
 }
 break;
         }
+                   //Calculate
+            case '6':{   
+                
+                        float num1, num2;
+                        cout<<"The challenge:\n";
+ cout<<"Pick two decimals and turn them into percents ";
+         cout<<"and add together on paper...\n";
+ cout<<"Then check your solution by solving on here! Ready, set, go!\n";
+  while(play_again == true)
+    {
+           cout<<endl;
+                        cout << "Enter first number in decimal form:\n";
+                        cin >> num1;
+                        while (num1<=0){
+                        cout << "Enter first number in decimal form:\n";
+                            cin >> num1;
+                        }
+     cout << "Enter second number in decimal form to be added to first:\n";
+                        cin >>num2;
+                        while (num2<=0){
+    cout << "Enter second number in decimal form to be added to first:\n";
+                            cin >> num2;
+                        }
+  cout << "The sum of the percents is %" << calculate(num1, num2)<<endl;
+  
+                           //Play again?
+      string choice;
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
+      cin >> choice;
+      //player chooses any other key than P/p it will exit
+      if(choice != "P" && choice != "p")
+      {
+        play_again = false;
+      }}
+                        break;
+            }
           
             //exit menu when 1-6 are not entered
                     default:{
@@ -285,3 +327,11 @@ break;
     //Exit stage right!
     return 0;
     } 
+
+//Function Definitions 6
+float calculate(float a, float  b){
+    float  percent;
+    percent = (a+b) * 100;
+    return percent;
+
+}
