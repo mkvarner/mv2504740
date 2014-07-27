@@ -328,7 +328,7 @@ break;
         cout<<"Enter what to count by 1, 2, 3, 4, or 5:\n";
         cin >>ch;
         
-        if(ch == 1); {
+        if (ch == 1); {
         const int Array_size = 10;
         int numbers [Array_size] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         
@@ -363,8 +363,7 @@ break;
         showValues (numbers, Array_size);
                         }
           
-        if (ch>5);{
-        cout<<"invalid entry...enter 1-5";}
+       
         
             string choice;
       cout <<"\n";
