@@ -328,7 +328,7 @@ while(play_again == true)
         switch(choice){
            
             //Start Multiplying
-            case  '4':{
+            case  '6':{
                 
 //2-dimensional array
 int anArray[5][4][3];
@@ -356,7 +356,7 @@ for (int nRow = 1; nRow < rows; nRow++)
 break;
         }
             //Start Dividing
-            case  '5':{
+            case  '7':{
                 
 //2-dimensional array
 int anArray[5][4][3];
@@ -384,7 +384,7 @@ for (int nRow = 1; nRow < rows; nRow++)
 break;
         }
                    //Sum the Percents
-            case '6':{   
+            case '8':{   
                 
                         float num1, num2;
                         cout<<"The challenge:\n";
@@ -418,12 +418,13 @@ break;
       if(choice != "P" && choice != "p")
       {
         play_again = false;
-      }}
+      }
+  }
                         break;
             }
             
           //Count by 1s, 2s, 3s, 4s, & 5s
-                    case  '7':{
+                    case  '9':{
                 cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
               
              
@@ -486,7 +487,7 @@ break;
     }
     }
   
-    }while(choice >= '4' && choice <='9'); //ends loop i.e. arcade
+    }while(choice >= '4' && choice <='7'); //ends loop i.e. arcade
            }
     //Exit stage right!
     return 0;
