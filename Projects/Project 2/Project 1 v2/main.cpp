@@ -34,7 +34,7 @@ int main(int argc, char** argv)
     char choice;
            bool play_again = true;
            
-            cout<<"Enter 1 for Player 1 and 2 for Player 2\n";
+            cout<<"Enter 1 for Beginner Player and 2 for Expert Player 2\n";
            cin>>player;
            
            if (player == 1)
@@ -59,8 +59,8 @@ int main(int argc, char** argv)
         //Place problem solutions in the switch statement
         cout<<endl;
         switch(choice){
-            //GAME 1
-            
+          
+           //guess the number I'm thinking of 
             case  '1':{
                 cout<<"Guess the number I'm thinking of!!!!!"<<endl<<endl;
                 cout<<"\n";
@@ -234,6 +234,7 @@ while(play_again == true)
                  break;
             }
    
+            //Lesson on Numbers
             case  '4':{
         cout<<"Learn About Numbers!!!!"<<endl;
         cout<<endl;
@@ -250,7 +251,7 @@ while(play_again == true)
              
                         break;
     }
-                               //Sum the Percents
+                               //Even or Odd
             case '5':{   
                 
                 int num;
@@ -301,7 +302,7 @@ while(play_again == true)
         }
        
         
-    }while(choice >= '1' && choice <='9'); //ends loop i.e. arcade
+    }while(choice >= '1' && choice <='5'); //ends loop i.e. arcade
            }
 
            else (player == 2);
@@ -485,7 +486,7 @@ break;
     }
     }
   
-    }while(choice >= '4' && choice <='7'); //ends loop i.e. arcade
+    }while(choice >= '4' && choice <='9'); //ends loop i.e. arcade
            }
     //Exit stage right!
     return 0;
