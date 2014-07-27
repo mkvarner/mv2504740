@@ -42,7 +42,7 @@ int main(int argc, char** argv)
         cout<<"Type 4 to play...Start Multiplying"<<endl;
         cout<<"Type 5 to play...Start Dividing"<<endl;
         cout<<"Type 6 to play...Sum the Percents"<<endl;
-        cout<<"Type 7 to play..."<<endl;
+        cout<<"Type 7 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -320,7 +320,7 @@ break;
           
                     case  '7':{
                 cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
-                cout<<"\n";
+              
              
     while(play_again == true)
     {
@@ -328,41 +328,43 @@ break;
         cout<<"Enter what to count by 1, 2, 3, 4, or 5:\n";
         cin >>ch;
         
-        if (ch == 1); {
+        if (ch == 1) {
         const int Array_size = 10;
         int numbers [Array_size] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         
         showValues (numbers, Array_size);
                      }
         
-          if (ch == 2); {
+          if (ch == 2) {
         const int Array_size = 10;
         int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         
         showValues (numbers, Array_size);
                             }
         
-          if (ch == 3); {
+          if (ch == 3) {
         const int Array_size = 10;
         int numbers [Array_size] = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
         
         showValues (numbers, Array_size);
                         }
         
-          if (ch == 4); {
+          if (ch == 4) {
         const int Array_size = 10;
         int numbers [Array_size] = {4, 8, 12, 16, 20, 24, 28, 32, 36, 40};
         
         showValues (numbers, Array_size);
                         }
         
-          if (ch == 5); {
+          if (ch == 5) {
         const int Array_size = 10;
         int numbers [Array_size] = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
         
         showValues (numbers, Array_size);
                         }
-          
+       if (ch>5){
+           cout<<"Invalid Entry\n";
+       }   
        
         
             string choice;
