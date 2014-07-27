@@ -20,6 +20,9 @@ void showValues(int[],int);
 //Function Problem 8
 void change(int);
 
+//Function Problem 9
+bool isEven(int);
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -47,6 +50,7 @@ int main(int argc, char** argv)
         cout<<"Type 6 to play...Sum the Percents"<<endl;
         cout<<"Type 7 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
         cout<<"Type 8 to play...Lesson on Numbers"<<endl;
+        cout<<"Type 9 to play...Even or Odd"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -401,6 +405,49 @@ break;
              
                         break;
     }
+                               //Sum the Percents
+            case '9':{   
+                
+                int num;
+                
+                 cout<<"See if you know your evens and odds!";
+                cout<<endl;
+                cout<<"Think of a number and then write on\n";
+                cout<<"a piece of paper even or odd for each attempt\n";
+             
+                
+                 while(play_again == true)
+    {
+                
+                cout<<"Write it down\n";
+                cout<<"Now enter your number: \n";
+                cin>>num;
+                
+                if (isEven(num)){
+                    cout<<endl;
+                    cout<<num<<" is even\n";
+                    cout<<"Were you right or wrong?\n";
+                }
+                else{
+                    cout<<endl;
+                    cout<<num<<" is odd\n";
+                    cout<<"Were you right?\n";
+                }
+                        
+  
+                           //Play again?
+      string choice;
+      cout <<"\n";
+      cout << "Press Y for yes or N for no and try again: ";
+      cin >> choice;
+      cout<<endl;
+      //player chooses any other key than P/p it will exit
+      if(choice != "N" && choice != "n")
+      {
+        play_again = false;
+      }}
+                        break;
+            }
     
             //exit menu when 1-6 are not entered
                     default:{
@@ -439,4 +486,14 @@ float calculate(float a, float  b)
     cout<<you<<endl;
     }
     
+   //Function Definitions 9
+    bool isEven(int number){
+        bool stat;
+        
+        if(number % 2 == 0)
+            stat = true;
+        else
+            stat = false;
+        return stat;
+    }
 
