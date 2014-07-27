@@ -38,7 +38,7 @@ int main(int argc, char** argv)
         cout<<"Type 3 to play...Subtract with me"<<endl;
         cout<<"Type 4 to play...Start Multiplying"<<endl;
         cout<<"Type 5 to play...Start Dividing"<<endl;
-        cout<<"Type 6 to play...Calculate Percents"<<endl;
+        cout<<"Type 6 to play...Sum the Percents"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -275,7 +275,7 @@ for (int nRow = 1; nRow < rows; nRow++)
 }
 break;
         }
-                   //Calculate
+                   //Sum the Percents
             case '6':{   
                 
                         float num1, num2;
@@ -298,7 +298,7 @@ break;
     cout << "Enter second number in decimal form to be added to first:\n";
                             cin >> num2;
                         }
-  cout << "The sum of the percents is %" << calculate(num1, num2)<<endl;
+  cout << "The sum is %" << calculate(num1, num2)<<endl;
   
                            //Play again?
       string choice;
