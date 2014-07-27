@@ -11,16 +11,16 @@
 #include<iomanip>
 #include<cmath>
 
-//Function problem 6
+//Function problem 8
 float calculate(float, float);
 
-//Function problem 7
+//Function problem 9
 void showValues(int[],int);
 
-//Function Problem 8
+//Function Problem 4
 void change(int);
 
-//Function Problem 9
+//Function Problem 5
 bool isEven(int);
 
 using namespace std;
@@ -30,10 +30,16 @@ int main(int argc, char** argv)
     // LeepFrog Mathematics – Game
 
   //Declare Variables
+     int player;          
     char choice;
            bool play_again = true;
-    
-    //Loop until choice is not in the menu selection
+           
+            cout<<"Enter 1 for Player 1 and 2 for Player 2\n";
+           cin>>player;
+           
+           if (player == 1)
+           {
+                 //Loop until choice is not in the menu selection
     do{
         //Start
         cout<<"\n";
@@ -45,12 +51,8 @@ int main(int argc, char** argv)
         cout<<"Type 1 to play...guess the number I'm thinking of"<<endl;
         cout<<"Type 2 to play...Add with me"<<endl;
         cout<<"Type 3 to play...Subtract with me"<<endl;
-        cout<<"Type 4 to play...Start Multiplying"<<endl;
-        cout<<"Type 5 to play...Start Dividing"<<endl;
-        cout<<"Type 6 to play...Sum the Percents"<<endl;
-        cout<<"Type 7 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
-        cout<<"Type 8 to play...Lesson on Numbers"<<endl;
-        cout<<"Type 9 to play...Even or Odd"<<endl;
+        cout<<"Type 4 to play...Lesson on Numbers"<<endl;
+        cout<<"Type 5 to play...Even or Odd"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -231,8 +233,100 @@ while(play_again == true)
                 
                  break;
             }
-            
-            //Game 4
+   
+            case  '4':{
+        cout<<"Learn About Numbers!!!!"<<endl;
+        cout<<endl;
+        
+        int num = 56;
+        
+        cout<<num<<" is not the same as"<<endl;
+        
+        change(num);
+       cout<<"Because "<<num<<" can only be "<<num<<".\n";
+       cout<<endl;
+       cout<<"Each are different quantities so they can't be the same.\n";
+       cout<<"Numbers are fun! So lets play another game!!!!!!\n";
+             
+                        break;
+    }
+                               //Sum the Percents
+            case '5':{   
+                
+                int num;
+                
+                 cout<<"See if you know your evens and odds!";
+                cout<<endl;
+                cout<<"Think of a number and then write on\n";
+                cout<<"a piece of paper even or odd for each attempt\n";
+             
+                
+                 while(play_again == true)
+    {
+                
+                cout<<"Write it down\n";
+                cout<<"Now enter your number: \n";
+                cin>>num;
+                
+                if (isEven(num)){
+                    cout<<endl;
+                    cout<<num<<" is even\n";
+                    cout<<"Were you right or wrong?\n";
+                }
+                else{
+                    cout<<endl;
+                    cout<<num<<" is odd\n";
+                    cout<<"Were you right?\n";
+                }
+                        
+  
+                           //Play again?
+      string choice;
+      cout <<"\n";
+      cout << "Press Y for yes or N for no and try again: ";
+      cin >> choice;
+      cout<<endl;
+      //player chooses any other key than P/p it will exit
+      if(choice != "N" && choice != "n")
+      {
+        play_again = false;
+      }}
+                        break;
+            }
+    
+            //exit menu when 1-6 are not entered
+                    default:{
+                cout<<"Exit Menu"<<endl<<endl;
+            };
+        }
+       
+        
+    }while(choice >= '1' && choice <='9'); //ends loop i.e. arcade
+           }
+
+           else (player == 2);
+           {
+                 //Loop until choice is not in the menu selection
+    do{
+        //Start
+        cout<<"\n";
+        cout<<"Welcome to my arcade!\n";
+        cout<<"Lets PLAY!\n";
+        cout<<"\n";
+        
+        //Output the menu and input the choice
+        cout<<"Type 6 to play...Start Multiplying"<<endl;
+        cout<<"Type 7 to play...Start Dividing"<<endl;
+        cout<<"Type 8 to play...Sum the Percents"<<endl;
+        cout<<"Type 9 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
+        cout<<"Type anything else to exit menu"<<endl;
+        cin>>choice;
+        play_again=true;
+        //Place problem solutions in the switch statement
+        cout<<endl;
+        switch(choice){
+           
+            //Start Multiplying
             case  '4':{
                 
 //2-dimensional array
@@ -260,6 +354,7 @@ for (int nRow = 1; nRow < rows; nRow++)
 }
 break;
         }
+            //Start Dividing
             case  '5':{
                 
 //2-dimensional array
@@ -325,7 +420,8 @@ break;
       }}
                         break;
             }
-          
+            
+          //Count by 1s, 2s, 3s, 4s, & 5s
                     case  '7':{
                 cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
               
@@ -387,82 +483,15 @@ break;
       }}
                         break;
     }
-    
-       
-            case  '8':{
-        cout<<"Learn About Numbers!!!!"<<endl;
-        cout<<endl;
-        
-        int num = 56;
-        
-        cout<<num<<" is not the same as"<<endl;
-        
-        change(num);
-       cout<<"Because "<<num<<" can only be "<<num<<".\n";
-       cout<<endl;
-       cout<<"Each are different quantities so they can't be the same.\n";
-       cout<<"Numbers are fun! So lets play another game!!!!!!\n";
-             
-                        break;
     }
-                               //Sum the Percents
-            case '9':{   
-                
-                int num;
-                
-                 cout<<"See if you know your evens and odds!";
-                cout<<endl;
-                cout<<"Think of a number and then write on\n";
-                cout<<"a piece of paper even or odd for each attempt\n";
-             
-                
-                 while(play_again == true)
-    {
-                
-                cout<<"Write it down\n";
-                cout<<"Now enter your number: \n";
-                cin>>num;
-                
-                if (isEven(num)){
-                    cout<<endl;
-                    cout<<num<<" is even\n";
-                    cout<<"Were you right or wrong?\n";
-                }
-                else{
-                    cout<<endl;
-                    cout<<num<<" is odd\n";
-                    cout<<"Were you right?\n";
-                }
-                        
   
-                           //Play again?
-      string choice;
-      cout <<"\n";
-      cout << "Press Y for yes or N for no and try again: ";
-      cin >> choice;
-      cout<<endl;
-      //player chooses any other key than P/p it will exit
-      if(choice != "N" && choice != "n")
-      {
-        play_again = false;
-      }}
-                        break;
-            }
-    
-            //exit menu when 1-6 are not entered
-                    default:{
-                cout<<"Exit Menu"<<endl<<endl;
-            };
-        }
-       
-        
-    }while(choice >= '1' && choice <='9'); //ends loop i.e. arcade
-
+    }while(choice >= '4' && choice <='7'); //ends loop i.e. arcade
+           }
     //Exit stage right!
     return 0;
     } 
 
-//Function Definitions 6
+//Function Definitions 8
 float calculate(float a, float  b)
 {
     float  percent;
@@ -471,7 +500,7 @@ float calculate(float a, float  b)
     return percent;
 }
     
- //Function Definitions 7
+ //Function Definitions 9
     void showValues(int nums[], int size)
     {
         for (int index = 0; index < size; index++)
@@ -479,14 +508,14 @@ float calculate(float a, float  b)
         cout<<endl;
     }
     
-    //Function Definitions 8
+    //Function Definitions 4
     void change(int you){
                 
     you = 57;
     cout<<you<<endl;
     }
     
-   //Function Definitions 9
+   //Function Definitions 5
     bool isEven(int number){
         bool stat;
         
