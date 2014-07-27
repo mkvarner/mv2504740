@@ -328,37 +328,43 @@ break;
         cout<<"Enter what to count by 1, 2, 3, 4, or 5:\n";
         cin >>ch;
         
-        if(ch == 1); 
+        if(ch == 1); {
         const int Array_size = 10;
         int numbers [Array_size] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         
         showValues (numbers, Array_size);
+                     }
         
-          if else(ch == 2); 
+          if (ch == 2); {
         const int Array_size = 10;
         int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         
         showValues (numbers, Array_size);
+                            }
         
-          if else(ch == 3); 
+          if (ch == 3); {
         const int Array_size = 10;
         int numbers [Array_size] = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
         
         showValues (numbers, Array_size);
+                        }
         
-          if else(ch == 4); 
+          if (ch == 4); {
         const int Array_size = 10;
         int numbers [Array_size] = {4, 8, 12, 16, 20, 24, 28, 32, 36, 40};
         
         showValues (numbers, Array_size);
-          if else(ch == 5); 
+                        }
+        
+          if (ch == 5); {
         const int Array_size = 10;
         int numbers [Array_size] = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
         
         showValues (numbers, Array_size);
-        
-        else (choice>5);
-        cout<<"invalid entry...enter 1-5";
+                        }
+          
+        if (ch>5);{
+        cout<<"invalid entry...enter 1-5";}
         
             string choice;
       cout <<"\n";
@@ -371,7 +377,7 @@ break;
         play_again = false;
       }}
                         break;
-            }
+    }
     
             //exit menu when 1-6 are not entered
                     default:{
@@ -381,14 +387,15 @@ break;
        
         
         
-    }while(choice >= '1' && choice <='6'); //ends loop i.e. arcade
+    }while(choice >= '1' && choice <='9'); //ends loop i.e. arcade
 
     //Exit stage right!
     return 0;
     } 
 
 //Function Definitions 6
-float calculate(float a, float  b){
+float calculate(float a, float  b)
+{
     float  percent;
     //Convert and sum percents
     percent = (a+b) * 100; 
