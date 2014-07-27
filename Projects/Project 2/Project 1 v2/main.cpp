@@ -319,68 +319,46 @@ break;
             }
           
                     case  '7':{
-                cout<<"Lets count by 2s!!!!!"<<endl<<endl;
+                cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
                 cout<<"\n";
              
     while(play_again == true)
     {
-        int choice;
-        cout<<"Enter what to count by 1-10\n";
-        cin >>choice;
+        int ch;
+        cout<<"Enter what to count by 1, 2, 3, 4, or 5:\n";
+        cin >>ch;
         
-        if(choice == 1); 
+        if(ch == 1); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        
+        showValues (numbers, Array_size);
+        
+          if else(ch == 2); 
         const int Array_size = 10;
         int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         
         showValues (numbers, Array_size);
         
-          if(choice == 2); 
+          if else(ch == 3); 
         const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int numbers [Array_size] = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
         
         showValues (numbers, Array_size);
         
-          if(choice == 3); 
+          if else(ch == 4); 
         const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int numbers [Array_size] = {4, 8, 12, 16, 20, 24, 28, 32, 36, 40};
         
         showValues (numbers, Array_size);
-          if(choice == 4); 
+          if else(ch == 5); 
         const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
-          if(choice == 5); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
-          if(choice == 6); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
-          if(choice == 7); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
-          if(choice == 8); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
-          if(choice == 9); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int numbers [Array_size] = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
         
         showValues (numbers, Array_size);
         
-          if(choice == 9); 
-        const int Array_size = 10;
-        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        
-        showValues (numbers, Array_size);
+        else (choice>5);
+        cout<<"invalid entry...enter 1-5";
         
             string choice;
       cout <<"\n";
