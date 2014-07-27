@@ -17,6 +17,9 @@ float calculate(float, float);
 //Function problem 7
 void showValues(int[],int);
 
+//Function Problem 8
+void changeMe(int);
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -43,6 +46,7 @@ int main(int argc, char** argv)
         cout<<"Type 5 to play...Start Dividing"<<endl;
         cout<<"Type 6 to play...Sum the Percents"<<endl;
         cout<<"Type 7 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
+        cout<<"Type 8 to play..."<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -386,7 +390,34 @@ break;
             };
         }
        
+            case  '8':{
+                cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
+              
+             
+    while(play_again == true)
+    {
+ 
+       
         
+            string choice;
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
+      cin >> choice;
+      //player chooses any other key than P/p it will exit
+      if(choice != "P" && choice != "p")
+      {
+        play_again = false;
+      }}
+                        break;
+    }
+    
+            //exit menu when 1-6 are not entered
+                    default:{
+                cout<<"Exit Menu"<<endl<<endl;
+            };
+        }
+       
         
     }while(choice >= '1' && choice <='9'); //ends loop i.e. arcade
 
