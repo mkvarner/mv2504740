@@ -14,6 +14,9 @@
 //Function problem 6
 float calculate(float, float);
 
+//Function problem 7
+void showValues(int[],int);
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -39,6 +42,7 @@ int main(int argc, char** argv)
         cout<<"Type 4 to play...Start Multiplying"<<endl;
         cout<<"Type 5 to play...Start Dividing"<<endl;
         cout<<"Type 6 to play...Sum the Percents"<<endl;
+        cout<<"Type 7 to play..."<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -314,11 +318,88 @@ break;
                         break;
             }
           
+                    case  '7':{
+                cout<<"Lets count by 2s!!!!!"<<endl<<endl;
+                cout<<"\n";
+             
+    while(play_again == true)
+    {
+        int choice;
+        cout<<"Enter what to count by 1-10\n";
+        cin >>choice;
+        
+        if(choice == 1); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+        
+          if(choice == 2); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+        
+          if(choice == 3); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 4); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 5); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 6); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 7); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 8); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+          if(choice == 9); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+        
+          if(choice == 9); 
+        const int Array_size = 10;
+        int numbers [Array_size] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        
+        showValues (numbers, Array_size);
+        
+            string choice;
+      cout <<"\n";
+      cout << "Press P to play again or any other key to exit this game";
+      cout <<" and return to main menu:";
+      cin >> choice;
+      //player chooses any other key than P/p it will exit
+      if(choice != "P" && choice != "p")
+      {
+        play_again = false;
+      }}
+                        break;
+            }
+    
             //exit menu when 1-6 are not entered
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
-            }
-        };
+            };
+        }
        
         
         
@@ -331,7 +412,17 @@ break;
 //Function Definitions 6
 float calculate(float a, float  b){
     float  percent;
-    percent = (a+b) * 100;
+    //Convert and sum percents
+    percent = (a+b) * 100; 
     return percent;
-
 }
+    
+ //Function Definitions 7
+    void showValues(int nums[], int size)
+    {
+        for (int index = 0; index < size; index++)
+            cout<<nums[index]<<" ";
+        cout<<endl;
+    }
+    
+
