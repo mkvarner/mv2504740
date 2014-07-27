@@ -18,7 +18,7 @@ float calculate(float, float);
 void showValues(int[],int);
 
 //Function Problem 8
-void changeMe(int);
+void change(int);
 
 using namespace std;
 
@@ -46,7 +46,7 @@ int main(int argc, char** argv)
         cout<<"Type 5 to play...Start Dividing"<<endl;
         cout<<"Type 6 to play...Sum the Percents"<<endl;
         cout<<"Type 7 to play...Count by 1s, 2s, 3s, 4s, & 5s"<<endl;
-        cout<<"Type 8 to play..."<<endl;
+        cout<<"Type 8 to play...Lesson on Numbers"<<endl;
         cout<<"Type anything else to exit menu"<<endl;
         cin>>choice;
         play_again=true;
@@ -384,31 +384,21 @@ break;
                         break;
     }
     
-            //exit menu when 1-6 are not entered
-                    default:{
-                cout<<"Exit Menu"<<endl<<endl;
-            };
-        }
        
             case  '8':{
-                cout<<"Lets count by 1s, 2s, 3s, 4s, & 5s!!!!!"<<endl<<endl;
-              
-             
-    while(play_again == true)
-    {
- 
-       
+        cout<<"Learn About Numbers!!!!"<<endl;
+        cout<<endl;
         
-            string choice;
-      cout <<"\n";
-      cout << "Press P to play again or any other key to exit this game";
-      cout <<" and return to main menu:";
-      cin >> choice;
-      //player chooses any other key than P/p it will exit
-      if(choice != "P" && choice != "p")
-      {
-        play_again = false;
-      }}
+        int num = 56;
+        
+        cout<<num<<" is not the same as"<<endl;
+        
+        change(num);
+       cout<<"Because "<<num<<" can only be "<<num<<".\n";
+       cout<<endl;
+       cout<<"Each are different quantities so they can't be the same.\n";
+       cout<<"Numbers are fun! So lets play another game!!!!!!\n";
+             
                         break;
     }
     
@@ -440,6 +430,13 @@ float calculate(float a, float  b)
         for (int index = 0; index < size; index++)
             cout<<nums[index]<<" ";
         cout<<endl;
+    }
+    
+    //Function Definitions 8
+    void change(int you){
+                
+    you = 57;
+    cout<<you<<endl;
     }
     
 
