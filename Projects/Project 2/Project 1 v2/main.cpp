@@ -34,7 +34,7 @@ int main(int argc, char** argv)
     char choice;
            bool play_again = true;
            
-            cout<<"Enter 1 for Beginner Player and 2 for Expert Player 2: \n";
+            cout<<"Enter 1 for Beginner Player or 2 for Expert Player: \n";
            cin>>player;
            
            //Beginner Player
