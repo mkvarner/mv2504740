@@ -34,9 +34,10 @@ int main(int argc, char** argv)
     char choice;
            bool play_again = true;
            
-            cout<<"Enter 1 for Beginner Player and 2 for Expert Player 2\n";
+            cout<<"Enter 1 for Beginner Player and 2 for Expert Player 2: \n";
            cin>>player;
            
+           //Beginner Player
            if (player == 1)
            {
                  //Loop until choice is not in the menu selection
@@ -305,6 +306,7 @@ while(play_again == true)
     }while(choice >= '1' && choice <='5'); //ends loop i.e. arcade
            }
 
+           //Expert Player
            else (player == 2);
            {
                  //Loop until choice is not in the menu selection
