@@ -331,7 +331,10 @@ while(play_again == true)
            
             //Start Multiplying
             case  '6':{
-                
+
+ while(play_again == true)
+    {
+
 //2-dimensional array
 int anArray[5][4][3];
 
@@ -339,6 +342,10 @@ int anArray[5][4][3];
 const int rows = 6;
 const int cols = 6;
 int prod[rows ][cols ] = { 0 };
+
+ cout<<"Try and memorize this multiplication table!\n";
+ cout<<"Study the table on the screen...\n";
+ cout<<endl;
  
 // Create table
 for (int nRow = 0; nRow < rows; nRow++)
@@ -355,6 +362,22 @@ for (int nRow = 1; nRow < rows; nRow++)
  
     cout << "\n";
 }
+     
+    cout<<"\nNow try and write the exact table without looking!\n";
+    cout<<endl;
+    cout<<"Were you right?\n";
+    
+    
+                           //Play again?
+      string choice;
+      cout << "Press Y for yes or N to output the table again to study: ";
+      cin >> choice;
+      cout<<endl;
+      //player chooses any other key than P/p it will exit
+      if(choice != "N" && choice != "n")
+      {
+        play_again = false;
+      }}
 break;
         }
             //Start Dividing
