@@ -512,7 +512,7 @@ break;
     }
     }
   
-    }while(choice >= '4' && choice <='7'); //ends loop i.e. arcade
+    }while(choice >= '4' && choice <='9'); //ends loop i.e. arcade
            }
     //Exit stage right!
     return 0;
@@ -552,4 +552,3 @@ float calculate(float a, float  b)
             stat = false;
         return stat;
     }
-
