@@ -414,17 +414,18 @@ for (int nRow = 0; nRow < row; nRow++){
 }
 // output the table
 int rowstart=1;
+cout<<"0   1   2  3  4  5\n";
 for (int nRow = 0; nRow < row; nRow++)
 {
-    cout<<"0   1   2  3  4  5\n";
+    cout<<rowstart<<" ";
+    rowstart++;
     
     for (int nCol = 0; nCol < col; nCol++){
         
         cout << div[nRow][nCol] << "\t";
     }
     cout << "\n";
-    cout<<rowstart<<" ";
-    rowstart++;
+    
 }
 break;
         }
