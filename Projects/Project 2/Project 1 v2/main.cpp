@@ -10,6 +10,7 @@
 #include <cstdlib> 
 #include<iomanip>
 #include<cmath>
+#include<string>
 
 //Function problem 8
 float calculate(float, float);
@@ -23,22 +24,27 @@ void change(int);
 //Function Problem 5
 bool isEven(int);
 
+
 using namespace std;
 
 int main(int argc, char** argv)
 {
     // LeepFrog Mathematics – Game
-
+ 
   //Declare Variables
      int player;          
     char choice;
            bool play_again = true;
+           string mystring[1];
+           
+           cout<<"What is your name?\n";
+          getline(cin,mystring[0]);
            
             cout<<"Enter 1 for Beginner Player or 2 for Expert Player: \n";
-           cin>>player;
-           
-           //Beginner Player
-           if (player == 1)
+                cin>>player;
+
+                //Beginner Player
+                if (player == 1)
            {
                  //Loop until choice is not in the menu selection
     do{
@@ -299,6 +305,8 @@ while(play_again == true)
             //exit menu when 1-6 are not entered
                     default:{
                 cout<<"Exit Menu"<<endl<<endl;
+                
+                break;
             };
         }
        
@@ -307,7 +315,7 @@ while(play_again == true)
            }
 
            //Expert Player
-           else (player == 2);
+           else
            {
                  //Loop until choice is not in the menu selection
     do{
@@ -336,7 +344,7 @@ while(play_again == true)
     {
 
 //2-dimensional array
-int anArray[5][4][3];
+//int anArray[5][4];
 
 // 6x6 array
 const int rows = 6;
@@ -384,27 +392,39 @@ break;
             case  '7':{
                 
 //2-dimensional array
-int anArray[5][4][3];
+//float anArray[5][4];
 
 // 6x6 array
-const int rows = 6;
-const int cols = 6;
-int div[rows ][cols ] = { 0 };
- 
+const int row = 5;
+const int col = 5;
+float div[row][col] = { 0 };
+float x=0;
+float y=0;
 // Create table
-for (int nRow = 0; nRow < rows; nRow++)
-    for (int nCol = 0; nCol < cols; nCol++)
-        
+for (int nRow = 0; nRow < row; nRow++){
+    x++;
+    for (int nCol = 0; nCol < col; nCol++){
+        y++;
+        cout<<"x:"<<x<<"divided by y:"<<y<<" = "<<y/x<<"\n";
         //Division calculation
-        div[nRow][nCol] = nRow / nCol;
- 
+        div[nRow][nCol] = y/x;
+    }
+    y=0;
+    
+}
 // output the table
-for (int nRow = 1; nRow < rows; nRow++)
+int rowstart=1;
+for (int nRow = 0; nRow < row; nRow++)
 {
-    for (int nCol = 1; nCol < cols; nCol++)
+    cout<<"0   1   2  3  4  5\n";
+    
+    for (int nCol = 0; nCol < col; nCol++){
+        
         cout << div[nRow][nCol] << "\t";
- 
+    }
     cout << "\n";
+    cout<<rowstart<<" ";
+    rowstart++;
 }
 break;
         }
@@ -514,6 +534,10 @@ break;
   
     }while(choice >= '4' && choice <='9'); //ends loop i.e. arcade
            }
+           
+           
+           cout<<"Thank you for playing "<<mystring[0];
+           
     //Exit stage right!
     return 0;
     } 
