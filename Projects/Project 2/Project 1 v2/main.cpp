@@ -370,7 +370,7 @@ for (int nRow = 1; nRow < rows; nRow++)
     
                            //Play again?
       string choice;
-      cout << "Press Y for yes or N to output the table again to study: ";
+      cout << "Press Y for yes or N to output the table again to study more: ";
       cin >> choice;
       cout<<endl;
       //player chooses any other key than P/p it will exit
