@@ -344,8 +344,6 @@ while(play_again == true)
     {
 
 //2-dimensional array
-//int anArray[5][4];
-
 // 6x6 array
 const int rows = 6;
 const int cols = 6;
@@ -392,8 +390,6 @@ break;
             case  '7':{
                 
 //2-dimensional array
-//float anArray[5][4];
-
 // 6x6 array
 const int row = 5;
 const int col = 5;
