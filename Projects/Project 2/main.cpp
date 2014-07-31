@@ -36,7 +36,7 @@ void change(int);
 bool isEven(int);
 
 //Function problem 0
-float tempCnv(float = 32);
+float num(float = 32);
 
 int main(int argc, char** argv)
 {
@@ -560,8 +560,8 @@ break;
     float num1, num2;
   
       //Calculate the conversions
-    num1=tempCnv();//Default parameter call for dec=0;
-    num2=tempCnv(fnum);
+    num1=num();//Default parameter call for dec=0;
+    num2=num(fnum);
     
      cout<<"\n"<<fnum<<"% converts to => "<<num2<<" and\n";
      cout<<num2<<" converts to => "<<fnum<<"%\n";
@@ -597,7 +597,7 @@ break;
     cout<<"The winner is....."
             <<mystring[0]<<endl;
     
-     cout<<"\nCome play again "<<mystring[0]<<" and we can learn some more!";
+     cout<<"\nCome play again "<<mystring[0]<<" and we can learn some more!\n";
            
     //Exit stage right!
     return 0;
@@ -639,7 +639,7 @@ float calculate(float a, float  b)
   }
     
 //Function definition 0
-    float tempCnv(float dec){
+    float num(float dec){
     //Process the input and return the value
     return dec/100;
 }
