@@ -12,9 +12,16 @@
 #include<cmath>
 #include<string>
 #include<ctime>
+#include<fstream>
 
 
 using namespace std;
+//Function winner
+//Function Prototype
+int random(int);
+int winner(int [],int);
+int read(char [],int []);
+void write(int [],int);
 
 //Function problem 8
 float calculate(float, float);
@@ -577,8 +584,20 @@ break;
     }while(choice >= '4' && choice <='9' || choice == '0'); //ends loop i.e. arcade
            }
            
-           
-           cout<<"Thank you for playing "<<mystring[0];
+            //Declare variables and initialize
+    char fName[]="\n";
+    const int SIZE=35;
+    int sIds[SIZE];
+    srand(static_cast<unsigned int>(time(0)));
+    //Read in the data
+    int actSize=read(fName,sIds);
+    //Print the data in the file
+    write(sIds,actSize);
+    //Choose the Winner
+    cout<<"The winner is....."
+            <<mystring[0]<<endl;
+    
+     cout<<"\nCome play again "<<mystring[0]<<" and we can learn some more!";
            
     //Exit stage right!
     return 0;
@@ -623,4 +642,37 @@ float calculate(float a, float  b)
     float tempCnv(float dec){
     //Process the input and return the value
     return dec/100;
+}
+    
+    //Function definition winner
+    int winner(int sId[],int n){
+    return sId[random(n)];
+}
+
+void write(int sId[],int size){
+    cout<<endl;
+    cout<<"GUESS WHAT?! YOU'RE AWESOME!"<<endl;
+    
+    cout<<endl;
+}
+
+int read(char fName[],int sId[]){
+    //Declare variables
+    int cnt=0;
+    ifstream input;
+    //Open the file
+    input.open(fName);
+    //Read the data
+    while(input){
+        input>>sId[cnt++];
+    }
+    //close the file
+    input.close();
+    //exit
+    return --cnt;
+}
+
+
+int random(int n){
+    return rand()%n;
 }
